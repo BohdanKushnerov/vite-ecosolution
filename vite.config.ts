@@ -6,10 +6,12 @@ export default defineConfig({
   resolve: {
     alias: {
       "@components": "/src/components",
+      "@assets": "/src/assets",
+      "@hooks": "/src/hooks",
     },
   },
   plugins: [react()],
-  base: "/vite-typescript-template",
+  base: "/vite-ecosolution",
   build: {
     outDir: "build", // Здесь указываем папку "build"
   },
