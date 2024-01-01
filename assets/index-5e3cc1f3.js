@@ -295,18 +295,10 @@ Error generating stack: `+o.message+`
     gap: 12px;
     margin-left: auto;
   }
-`,s0=()=>z.jsxs(i0,{children:[z.jsx(r0,{}),z.jsxs(u0,{children:[z.jsx(qm,{}),z.jsx(o0,{})]})]});const a0=()=>z.jsx("div",{children:z.jsx($m,{children:z.jsx(s0,{})})});const c0=Im`
+`,s0=()=>z.jsxs(i0,{children:[z.jsx(r0,{}),z.jsxs(u0,{children:[z.jsx(qm,{}),z.jsx(o0,{})]})]}),a0=()=>z.jsx("div",{children:z.jsx($m,{children:z.jsx(s0,{})})});const c0=Im`
   body {
         margin: 0;
-        /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-          'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-          'Helvetica Neue', sans-serif; */
-          /* font-family: Fira Sans;
-          font-family: "FONTSPRING DEMO - All Round Gothic Thick";
-            font-family: CA Saygon Text;
-  font-family: Fira Sans;
-
-          */
+        font-family: "Fira Sans", "CA Saygon Text", "FONTSPRING DEMO - All Round Gothic Thick", sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
