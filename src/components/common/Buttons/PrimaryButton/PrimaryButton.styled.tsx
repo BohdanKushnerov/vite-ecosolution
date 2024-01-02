@@ -17,7 +17,6 @@ export const Button = styled.button`
     background: #97d28b;
     border: none;
     color: #173d33;
-    font-family: Fira Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

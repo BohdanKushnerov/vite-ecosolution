@@ -8,7 +8,7 @@ export const ButtonClose = styled.button`
 
   background: transparent;
   border: none;
-  
+
   cursor: pointer;
   overflow: hidden;
 
@@ -49,7 +49,6 @@ export const ButtonCloseContentWrap = styled.span`
 
 export const ButtonCloseText = styled.span`
   color: #fff;
-  font-family: Fira Sans;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;

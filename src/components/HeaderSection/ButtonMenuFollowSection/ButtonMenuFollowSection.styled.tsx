@@ -8,7 +8,6 @@ export const ButtonFollowSection = styled.button`
   background: transparent;
   border: none;
   color: #FFFFFF;
-  font-family: Fira Sans;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;

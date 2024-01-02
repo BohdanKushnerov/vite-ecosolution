@@ -3,14 +3,9 @@ import styled from "styled-components";
 export const MainContentWrap = styled.div`
   margin-top: 146px;
   display: flex;
-  /* align-items: start; */
 
   @media (max-width: 767px) {
     flex-direction: column;
-  }
-
-  @media (min-width: 768px) {
-    justify-content: space-between;
   }
 `;
 
@@ -36,7 +31,7 @@ export const MainTitle = styled.h1`
   width: 320px;
 
   color: #173d33;
-  font-family: Oswald;
+  font-family: "Oswald";
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -61,7 +56,6 @@ export const MainParagraph = styled.p`
 
   color: #173d33;
   text-align: justify;
-  font-family: Fira Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -82,5 +76,11 @@ export const MainParagraph = styled.p`
 `;
 
 export const MainParagraphButtonWrap = styled.div`
-  /*  */
+  @media (min-width: 768px) {
+    margin-left: auto;
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 296px;
+  }
 `;

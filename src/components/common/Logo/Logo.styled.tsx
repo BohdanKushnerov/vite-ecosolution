@@ -20,7 +20,7 @@ export const LogoGreenergy = styled.p`
   width: 60px;
 
   color: #97d28b;
-  font-family: CA Saygon Text;
+  font-family: "CA Saygon Text";
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -31,7 +31,7 @@ export const LogoGreenergy = styled.p`
 
 export const LogoGreen = styled.span`
   color: #173d33;
-  font-family: CA Saygon Text;
+  font-family: "CA Saygon Text";
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
