@@ -13,7 +13,7 @@
 <symbol id="icon-close-menu" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M9.333 9.333l13.333 13.333M9.333 22.667l13.333-13.333"></path>
 </symbol>
-<symbol id="icon-arrow-right" viewBox="0 0 30 32">
+<symbol id="icon-arrow-right-up" viewBox="0 0 30 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8824" d="M11.829 8.456h10.772v10.772"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8824" d="M7.517 23.541l14.934-14.934"></path>
 </symbol>
@@ -33,6 +33,10 @@
 <path d="M29.867 16c0 8.247-6.686 14.933-14.933 14.933s-14.933-6.686-14.933-14.933c0-8.247 6.686-14.933 14.933-14.933s14.933 6.686 14.933 14.933z"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.7784" d="M19.789 17.728l-4.856 4.316-4.856-4.316"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.7784" d="M14.932 9.956v11.968"></path>
+</symbol>
+<symbol id="icon-arrow-right" viewBox="0 0 30 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8824" d="M18.108 8.382l7.617 7.617-7.617 7.617"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8824" d="M4.392 16h21.12"></path>
 </symbol>
 </defs>
 </svg>

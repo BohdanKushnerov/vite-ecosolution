@@ -35,7 +35,6 @@ export const ButtonClose = styled.button`
 
     width: 272px;
     height: 1px;
-    /* margin-bottom: 24px; */
 
     flex-shrink: 0;
     background: #fff;
@@ -56,8 +55,4 @@ export const ButtonCloseText = styled.span`
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.8px;
-
-  /* &:hover {
-    color: #97d28b;
-  } */
 `;

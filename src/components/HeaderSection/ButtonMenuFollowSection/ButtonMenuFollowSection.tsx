@@ -14,7 +14,7 @@ const ButtonMenuFollowSection: FC<IButtonMenuFollowSection> = ({ label }) => {
     <ButtonFollowSection>
       {label}
       <svg width={16} height={16}>
-        <use xlinkHref={sprite + "#icon-arrow-right"} />
+        <use xlinkHref={sprite + "#icon-arrow-right-up"} />
       </svg>
     </ButtonFollowSection>
   );

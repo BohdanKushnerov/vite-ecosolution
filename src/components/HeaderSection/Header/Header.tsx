@@ -11,7 +11,7 @@ const Header: FC = () => {
       <Logo />
       <HeaderMenuAndButtonWrap>
         <HeaderMenu />
-        <HeaderTouchButton />
+        <HeaderTouchButton textContent="Get in touch" />
       </HeaderMenuAndButtonWrap>
     </HeaderWrap>
   );

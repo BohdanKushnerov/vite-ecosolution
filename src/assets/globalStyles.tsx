@@ -5,7 +5,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
   body {
         margin: 0;
-        font-family: "Fira Sans", "CA Saygon Text", "FONTSPRING DEMO - All Round Gothic Thick", sans-serif;
+        font-family: "Fira Sans", "CA Saygon Text", "FONTSPRING DEMO - All Round Gothic Thick", "Oswald", sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
