@@ -13,7 +13,7 @@ const Electricity: FC = () => {
   const counter = useCounterInterval();
 
   return (
-    <div>
+    <section>
       <ElectricityTitle>Electricity we produced for all time</ElectricityTitle>
       <ElectricityCounterWrap>
         <ElectricityCounter>
@@ -21,7 +21,7 @@ const Electricity: FC = () => {
         </ElectricityCounter>
         <KWHSpan>kWh</KWHSpan>
       </ElectricityCounterWrap>
-    </div>
+    </section>
   );
 };
 

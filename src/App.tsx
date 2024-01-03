@@ -5,6 +5,7 @@ import Header from "components/HeaderSection/Header/Header";
 import Main from "components/MainSection/Main/Main";
 import About from "components/AboutSection/About/About";
 import Electricity from "components/ElectricitySection/Electricity/Electricity";
+import Cases from "components/CasesSection/Cases/Cases";
 import GlobalStyles from "assets/globalStyles";
 
 const App: FC = () => {
@@ -16,6 +17,7 @@ const App: FC = () => {
         <Main />
         <About />
         <Electricity />
+        <Cases />
       </MainContainer>
     </>
   );

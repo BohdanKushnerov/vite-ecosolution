@@ -17,7 +17,7 @@ import sprite from "assets/sprite.svg";
 
 const About: FC = () => {
   return (
-    <div>
+    <section>
       <EcoInfo>
         <Street>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</Street>
         <Email>office@ecosolution.com</Email>
@@ -137,7 +137,7 @@ const About: FC = () => {
           </ValueItemText>
         </ValueItem>
       </ValueList>
-    </div>
+    </section>
   );
 };
 
