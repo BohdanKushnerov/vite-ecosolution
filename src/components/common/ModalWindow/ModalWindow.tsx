@@ -1,7 +1,7 @@
 import { FC, MouseEvent, ReactNode } from "react";
 import { createPortal } from "react-dom";
 
-import useCloseModal from "@hooks/useCloseModal";
+import useCloseModal from "hooks/useCloseModal";
 import { ModalWindowWrap } from "./ModalWindow.styled";
 
 const modalRoot = document.querySelector("#modal-root")!;

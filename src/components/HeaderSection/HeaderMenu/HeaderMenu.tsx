@@ -1,8 +1,8 @@
 import { FC, useState } from "react";
 
-import HeaderMenuModal from "@components/HeaderSection/HeaderMenuModal/HeaderMenuModal";
+import HeaderMenuModal from "components/HeaderSection/HeaderMenuModal/HeaderMenuModal";
 import { HeaderMenuButton } from "./HeaderMenu.styled";
-import sprite from "@assets/sprite.svg";
+import sprite from "assets/sprite.svg";
 
 const HeaderMenu: FC = () => {
   const [isOpenHeaderMenuModal, setIsOpenHeaderMenuModal] = useState(false);

@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import sprite from "@assets/sprite.svg";
+import sprite from "assets/sprite.svg";
 import {
   LogoEcosolution,
   LogoGreen,

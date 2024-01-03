@@ -27,10 +27,3 @@ export const ButtonFollowSection = styled.button`
     }
   }
 `;
-
-export const ButtonFollowSectionIcon = styled.svg`
-  /* use {
-    fill: "transparent";
-    stroke: "#FFFFFF";
-  } */
-`;

@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 import { Button } from "./PrimaryButton.styled";
-import sprite from "@assets/sprite.svg";
+import sprite from "assets/sprite.svg";
 
 interface IPrimaryButton {
   textContent: string;

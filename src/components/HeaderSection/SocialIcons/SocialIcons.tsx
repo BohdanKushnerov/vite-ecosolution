@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 import { SocialIcon, SocialIconsWrap } from "./SocialIcons.styled";
-import sprite from "@assets/sprite.svg";
+import sprite from "assets/sprite.svg";
 
 const SocialIcons: FC = () => {
   return (

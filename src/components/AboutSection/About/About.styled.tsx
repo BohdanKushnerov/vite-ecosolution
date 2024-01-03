@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const EcoInfo = styled.div`
-  /* @media (max-width: 767px) {
-  } */
   margin-top: 24px;
   margin-bottom: 36px;
 
@@ -65,10 +63,6 @@ export const Ecosolution = styled.p`
     margin-left: auto;
   }
 `;
-
-// export const Picture = styled.picture`
-
-// `;
 
 export const AboutTitle = styled.h2`
   margin-top: 36px;

@@ -5,7 +5,7 @@ import {
   ButtonCloseContentWrap,
   ButtonCloseText,
 } from "./ButtonCloseMenu.styled";
-import sprite from "@assets/sprite.svg";
+import sprite from "assets/sprite.svg";
 
 interface IButtonCloseMenu {
   handleToggleModal: () => void;

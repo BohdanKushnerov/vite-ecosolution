@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Button, IconWrap } from "./SecondaryButton.styled";
-import sprite from "@assets/sprite.svg";
+import sprite from "assets/sprite.svg";
 
 interface ISecondaryButton {
   textContent: string;

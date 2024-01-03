@@ -3,7 +3,7 @@ import { FC } from "react";
 import {
   ButtonFollowSection,
 } from "./ButtonMenuFollowSection.styled";
-import sprite from "@assets/sprite.svg";
+import sprite from "assets/sprite.svg";
 
 interface IButtonMenuFollowSection {
   label: string;

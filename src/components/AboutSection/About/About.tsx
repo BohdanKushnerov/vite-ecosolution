@@ -13,7 +13,7 @@ import {
   ValueList,
   ValueTitleSvgWrap,
 } from "./About.styled";
-import sprite from "@assets/sprite.svg";
+import sprite from "assets/sprite.svg";
 
 const About: FC = () => {
   return (
