@@ -94,3 +94,102 @@ export const AboutText = styled.p`
   line-height: normal;
   letter-spacing: -0.64px;
 `;
+
+export const ValueList = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+`;
+
+export const ValueItem = styled.li`
+  width: 148px;
+  height: 197px;
+  flex-shrink: 0;
+  padding: 12px;
+
+  background: #eaedf1;
+
+  @media (min-width: 768px) {
+    width: 159px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 274px;
+    height: 339px;
+
+    padding: 48px 24px;
+  }
+`;
+
+export const ValueImage = styled.li`
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    grid-column: span 2;
+  }
+`;
+
+export const ValueTitleSvgWrap = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 33px;
+  margin-bottom: 12px;
+
+  border-bottom: 1px solid #97d28b;
+
+  @media (min-width: 768px) {
+    padding-bottom: 51px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-bottom: 94px;
+    margin-bottom: 24px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+`;
+
+export const ValueItemTitle = styled.h3`
+  display: flex;
+  flex-direction: column;
+
+  color: #173d33;
+  font-family: "Oswald";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 32px;
+    line-height: 48px; /* 150% */
+  }
+`;
+
+export const ValueItemText = styled.p`
+  color: #173d33;
+  text-align: justify;
+  font-family: "Fira Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.56px;
+
+  @media (min-width: 1440px) {
+    font-size: 16px;
+  }
+`;

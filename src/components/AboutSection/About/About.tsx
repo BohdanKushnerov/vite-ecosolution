@@ -6,7 +6,14 @@ import {
   Ecosolution,
   Email,
   Street,
+  ValueImage,
+  ValueItem,
+  ValueItemText,
+  ValueItemTitle,
+  ValueList,
+  ValueTitleSvgWrap,
 } from "./About.styled";
+import sprite from "@assets/sprite.svg";
 
 const About: FC = () => {
   return (
@@ -40,32 +47,96 @@ const About: FC = () => {
         needs.
       </AboutText>
 
-      <div>
-        <div>
-          <h3>Openness</h3>
-          <p>to the world, people, new ideas and projects</p>
-        </div>
-        <div>
-          <h3>Responsibility</h3>
-          <p>
+      <ValueList>
+        <ValueItem>
+          <ValueTitleSvgWrap>
+            <svg width={16} height={16}>
+              <use
+                xlinkHref={sprite + "#icon-maximize-circle"}
+                fill="transparent"
+                stroke="#173D33"
+              />
+            </svg>
+            <ValueItemTitle>Openness</ValueItemTitle>
+          </ValueTitleSvgWrap>
+          <ValueItemText>
+            to the world, people, new ideas and projects
+          </ValueItemText>
+        </ValueItem>
+        <ValueItem>
+          <ValueTitleSvgWrap>
+            <svg width={16} height={16}>
+              <use
+                xlinkHref={sprite + "#icon-global-edit"}
+                fill="transparent"
+                stroke="#173D33"
+              />
+            </svg>
+            <ValueItemTitle>Responsibility</ValueItemTitle>
+          </ValueTitleSvgWrap>
+          <ValueItemText>
             we are aware that the results of our work have an impact on our
             lives and the lives of future generations
-          </p>
-        </div>
-        <div>
-          <h3>Innovation</h3>
-          <p>
+          </ValueItemText>
+        </ValueItem>
+        <ValueImage>
+          <picture>
+            <source
+              srcSet="/src/assets/AboutSectionImages/Values/wind-farms-tabl.webp 1x, /src/assets/AboutSectionImages/Values//wind-farms-2xtabl.webp 2x"
+              media="(min-width: 768px) and (max-width: 1439px)"
+            />
+            <source
+              srcSet="/src/assets/AboutSectionImages/Values/wind-farms-desk.webp 1x, /src/assets/AboutSectionImages/Values/wind-farms-2xdesk.webp 2x"
+              media="(min-width: 1440px)"
+            />
+            <img src="/src/assets/AboutSectionImages/Values/wind-farms-desk.webp" />
+          </picture>
+        </ValueImage>
+        <ValueImage>
+          <picture>
+            <source
+              srcSet="/src/assets/AboutSectionImages/Values/solar-panels-tabl.webp 1x, /src/assets/AboutSectionImages/Values/solar-panels-2xtabl.webp 2x"
+              media="(min-width: 768px) and (max-width: 1439px)"
+            />
+            <source
+              srcSet="/src/assets/AboutSectionImages/Values/solar-panels-desk.webp 1x, /src/assets/AboutSectionImages/Values/solar-panels-2xdesk.webp 2x"
+              media="(min-width: 1440px)"
+            />
+            <img src="/src/assets/AboutSectionImages/Values/wind-farms-desk.webp" />
+          </picture>
+        </ValueImage>
+        <ValueItem>
+          <ValueTitleSvgWrap>
+            <svg width={16} height={16}>
+              <use
+                xlinkHref={sprite + "#icon-cpu-charge"}
+                fill="transparent"
+                stroke="#173D33"
+              />
+            </svg>
+            <ValueItemTitle>Innovation</ValueItemTitle>
+          </ValueTitleSvgWrap>
+          <ValueItemText>
             we use the latest technology to implement non-standard solutions
-          </p>
-        </div>
-        <div>
-          <h3>Quality</h3>
-          <p>
+          </ValueItemText>
+        </ValueItem>
+        <ValueItem>
+          <ValueTitleSvgWrap>
+            <svg width={16} height={16}>
+              <use
+                xlinkHref={sprite + "#icon-ranking"}
+                fill="transparent"
+                stroke="#173D33"
+              />
+            </svg>
+            <ValueItemTitle>Quality</ValueItemTitle>
+          </ValueTitleSvgWrap>
+          <ValueItemText>
             we do not strive to be the first among others, but we want to be the
             best in our business
-          </p>
-        </div>
-      </div>
+          </ValueItemText>
+        </ValueItem>
+      </ValueList>
     </div>
   );
 };
