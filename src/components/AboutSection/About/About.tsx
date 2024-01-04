@@ -1,4 +1,6 @@
 import { FC } from "react";
+
+import ImageTurbina from "../Pictures/ImageTurbinaPicture/ImageTurbinaPicture";
 import {
   AboutText,
   AboutTitle,
@@ -14,6 +16,8 @@ import {
   ValueTitleSvgWrap,
 } from "./About.styled";
 import sprite from "assets/sprite.svg";
+import WindFarmsPicture from "../Pictures/WindFarmsPicture/WindFarmsPicture";
+import SolarPanelsPicture from "../Pictures/SolarPanelsPicture/SolarPanelsPicture";
 
 const About: FC = () => {
   return (
@@ -23,21 +27,8 @@ const About: FC = () => {
         <Email>office@ecosolution.com</Email>
         <Ecosolution>ecosolution © 2023</Ecosolution>
       </EcoInfo>
-      <picture>
-        <source
-          srcSet="/src/assets/AboutSectionImages/turbine-mob.webp 1x, /src/assets/AboutSectionImages/turbine-2xmob.webp 2x"
-          media="(max-width: 767px)"
-        />
-        <source
-          srcSet="/src/assets/AboutSectionImages/turbine-tabl.webp 1x, /src/assets/AboutSectionImages/turbine-2xtabl.webp 2x"
-          media="(min-width: 768px) and (max-width: 1439px)"
-        />
-        <source
-          srcSet="/src/assets/AboutSectionImages/turbine-desk.webp 1x, /src/assets/AboutSectionImages/turbine-2xdesk.webp 2x"
-          media="(min-width: 1440px)"
-        />
-        <img src="/src/assets/AboutSectionImages/turbine-desk.webp" />
-      </picture>
+      {/* ImageTurbina */}
+      <ImageTurbina />
       <AboutTitle>Main values of our company</AboutTitle>
       <AboutText>
         EcoSolution envisions a world where sustainable energy solutions power a
@@ -79,31 +70,13 @@ const About: FC = () => {
             lives and the lives of future generations
           </ValueItemText>
         </ValueItem>
+        {/* WindFarmsPicture */}
         <ValueImage>
-          <picture>
-            <source
-              srcSet="/src/assets/AboutSectionImages/Values/wind-farms-tabl.webp 1x, /src/assets/AboutSectionImages/Values//wind-farms-2xtabl.webp 2x"
-              media="(min-width: 768px) and (max-width: 1439px)"
-            />
-            <source
-              srcSet="/src/assets/AboutSectionImages/Values/wind-farms-desk.webp 1x, /src/assets/AboutSectionImages/Values/wind-farms-2xdesk.webp 2x"
-              media="(min-width: 1440px)"
-            />
-            <img src="/src/assets/AboutSectionImages/Values/wind-farms-desk.webp" />
-          </picture>
+          <WindFarmsPicture />;
         </ValueImage>
+        {/* SolarPanelsPicture */}
         <ValueImage>
-          <picture>
-            <source
-              srcSet="/src/assets/AboutSectionImages/Values/solar-panels-tabl.webp 1x, /src/assets/AboutSectionImages/Values/solar-panels-2xtabl.webp 2x"
-              media="(min-width: 768px) and (max-width: 1439px)"
-            />
-            <source
-              srcSet="/src/assets/AboutSectionImages/Values/solar-panels-desk.webp 1x, /src/assets/AboutSectionImages/Values/solar-panels-2xdesk.webp 2x"
-              media="(min-width: 1440px)"
-            />
-            <img src="/src/assets/AboutSectionImages/Values/wind-farms-desk.webp" />
-          </picture>
+          <SolarPanelsPicture />
         </ValueImage>
         <ValueItem>
           <ValueTitleSvgWrap>

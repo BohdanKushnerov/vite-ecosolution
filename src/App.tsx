@@ -6,6 +6,7 @@ import Main from "components/MainSection/Main/Main";
 import About from "components/AboutSection/About/About";
 import Electricity from "components/ElectricitySection/Electricity/Electricity";
 import Cases from "components/CasesSection/Cases/Cases";
+import Questions from "components/QuestionsSection/Questions/Questions";
 import GlobalStyles from "assets/globalStyles";
 
 const App: FC = () => {
@@ -18,6 +19,7 @@ const App: FC = () => {
         <About />
         <Electricity />
         <Cases />
+        <Questions />
       </MainContainer>
     </>
   );

@@ -4,11 +4,12 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
+import SlidePicture from "../SlidePicture/SlidePicture";
 import useResizeWindow from "hooks/useResizeWindow";
+import swiperData from "constants/swiperData";
 import {
   CasesTitle,
   IconSlideWrap,
-  Image,
   SlideDate,
   SlideDescDateWrap,
   SlideDescription,
@@ -33,7 +34,6 @@ const Cases: FC = () => {
     <section>
       <TitleCounterAndButtonWrap>
         <CasesTitle>Successful cases of our company</CasesTitle>
-        {/*  */}
         <SliderCounterAndButtonWrap>
           <SliderCounter>
             {currentSlide}
@@ -53,7 +53,7 @@ const Cases: FC = () => {
           </SliderButtonsWrap>
         </SliderCounterAndButtonWrap>
       </TitleCounterAndButtonWrap>
-      {/*  */}
+      {/* Swiper */}
       <SwiperWrap>
         <Swiper
           modules={[Navigation]}
@@ -66,123 +66,29 @@ const Cases: FC = () => {
           }}
           onSlideChange={(swiper) => setCurrentSlide(swiper.realIndex + 1)}
         >
-          <SwiperSlide>
-            <picture>
-              <source srcSet="/src/assets/CasesSwiperImages/lviv-region.webp 1x, /src/assets/CasesSwiperImages/lviv-region-2x.webp 2x" />
-              <Image src="/src/assets/CasesSwiperImages/lviv-region.webp" />
-            </picture>
-            <SlideTextContentWrap>
-              <SlideTitleIconWrap>
-                <SlideTitle>
-                  Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”
-                </SlideTitle>
-                <IconSlideWrap>
-                  <svg width={28} height={28}>
-                    <use href={sprite + "#icon-arrow-right-up"} />
-                  </svg>
-                </IconSlideWrap>
-              </SlideTitleIconWrap>
-              <SlideDescDateWrap>
-                <SlideDescription>
-                  Wind Power for auto field irrigation
-                </SlideDescription>
-                <SlideDate>July 2023</SlideDate>
-              </SlideDescDateWrap>
-            </SlideTextContentWrap>
-          </SwiperSlide>
-
-          {/*  */}
-          <SwiperSlide>
-            <picture>
-              <source srcSet="/src/assets/CasesSwiperImages/zhytomyr-city.webp 1x, /src/assets/CasesSwiperImages/zhytomyr-city-2x.webp 2x" />
-              <Image src="/src/assets/CasesSwiperImages/zhytomyr-city.webp" />
-            </picture>
-            <SlideTextContentWrap>
-              <SlideTitleIconWrap>
-                <SlideTitle>
-                  Zhytomyr city Private Enterprise “Bosch”
-                </SlideTitle>
-                <IconSlideWrap>
-                  <svg width={28} height={28}>
-                    <use href={sprite + "#icon-arrow-right-up"} />
-                  </svg>
-                </IconSlideWrap>
-              </SlideTitleIconWrap>
-              <SlideDescDateWrap>
-                <SlideDescription>
-                  Solar Panels for industrial use
-                </SlideDescription>
-                <SlideDate>November 2023</SlideDate>
-              </SlideDescDateWrap>
-            </SlideTextContentWrap>
-          </SwiperSlide>
-          {/*  */}
-          <SwiperSlide>
-            <picture>
-              <source srcSet="/src/assets/CasesSwiperImages/rivne-city.webp 1x, /src/assets/CasesSwiperImages/rivne-city-2x.webp 2x" />
-              <Image src="/src/assets/CasesSwiperImages/rivne-city.webp" />
-            </picture>
-            <SlideTextContentWrap>
-              <SlideTitleIconWrap>
-                <SlideTitle>Rivne city Private Enterprise “Biotech”</SlideTitle>
-                <IconSlideWrap>
-                  <svg width={28} height={28}>
-                    <use href={sprite + "#icon-arrow-right-up"} />
-                  </svg>
-                </IconSlideWrap>
-              </SlideTitleIconWrap>
-              <SlideDescDateWrap>
-                <SlideDescription>Thermal modules</SlideDescription>
-                <SlideDate>October 2023</SlideDate>
-              </SlideDescDateWrap>
-            </SlideTextContentWrap>
-          </SwiperSlide>
-          {/*  */}
-          <SwiperSlide>
-            <picture>
-              <source srcSet="/src/assets/CasesSwiperImages/kherson-city.webp 1x, /src/assets/CasesSwiperImages/kherson-city-2x.webp 2x" />
-              <Image src="/src/assets/CasesSwiperImages/kherson-city.webp" />
-            </picture>
-            <SlideTextContentWrap>
-              <SlideTitleIconWrap>
-                <SlideTitle>
-                  Kherson city Private Enterprise “HealthyFarm”
-                </SlideTitle>
-                <IconSlideWrap>
-                  <svg width={28} height={28}>
-                    <use href={sprite + "#icon-arrow-right-up"} />
-                  </svg>
-                </IconSlideWrap>
-              </SlideTitleIconWrap>
-              <SlideDescDateWrap>
-                <SlideDescription>Wind power</SlideDescription>
-                <SlideDate>September 2021</SlideDate>
-              </SlideDescDateWrap>
-            </SlideTextContentWrap>
-          </SwiperSlide>
-          {/*  */}
-          <SwiperSlide>
-            <picture>
-              <source srcSet="/src/assets/CasesSwiperImages/zaporizhia-city.webp 1x, /src/assets/CasesSwiperImages/zaporizhia-city-2x.webp 2x" />
-              <Image src="/src/assets/CasesSwiperImages/zaporizhia-city.webp" />
-            </picture>
-            <SlideTextContentWrap>
-              <SlideTitleIconWrap>
-                <SlideTitle>
-                  Zaporizhia city Private Enterprise “Biotech”
-                </SlideTitle>
-                <IconSlideWrap>
-                  <svg width={28} height={28}>
-                    <use href={sprite + "#icon-arrow-right-up"} />
-                  </svg>
-                </IconSlideWrap>
-              </SlideTitleIconWrap>
-              <SlideDescDateWrap>
-                <SlideDescription>Mini nuclear stations</SlideDescription>
-                <SlideDate>May 2021</SlideDate>
-              </SlideDescDateWrap>
-            </SlideTextContentWrap>
-          </SwiperSlide>
+          {swiperData.map((data) => (
+            <SwiperSlide key={data.key}>
+              {/* SlidePicture */}
+              <SlidePicture
+                imageSrc={data.imageSrc}
+                imageSrc2x={data.imageSrc2x}
+              />
+              <SlideTextContentWrap>
+                <SlideTitleIconWrap>
+                  <SlideTitle>{data.title}</SlideTitle>
+                  <IconSlideWrap>
+                    <svg width={28} height={28}>
+                      <use href={sprite + "#icon-arrow-right-up"} />
+                    </svg>
+                  </IconSlideWrap>
+                </SlideTitleIconWrap>
+                <SlideDescDateWrap>
+                  <SlideDescription>{data.description}</SlideDescription>
+                  <SlideDate>{data.date}</SlideDate>
+                </SlideDescDateWrap>
+              </SlideTextContentWrap>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </SwiperWrap>
     </section>

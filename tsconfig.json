@@ -5,7 +5,8 @@
       "components/*": ["components/*"],
       "assets/*": ["assets/*"],
       "hooks/*": ["hooks/*"],
-      "utils/*": ["utils/*"]
+      "utils/*": ["utils/*"],
+      "constants/*": ["constants/*"],
     },
     "target": "ES2020",
     "useDefineForClassFields": true,

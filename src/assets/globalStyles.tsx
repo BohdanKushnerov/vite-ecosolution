@@ -1,51 +1,52 @@
 import "modern-normalize";
 
 import { createGlobalStyle } from "styled-components";
+import Fonts from "./fontPaths";
 
 const GlobalStyles = createGlobalStyle`
 @font-face {
   font-family: 'Fira Sans';
-  src: url('/src/assets/fonts/FiraSans/fira-sans-v17-latin-300.woff2') format('woff2');
+  src: url(${Fonts.FiraSans_300}) format('woff2');
 }
 
 @font-face {
   font-family: 'Fira Sans';
-  src: url('/src/assets/fonts/FiraSans/fira-sans-v17-latin-regular.woff2') format('woff2');
+  src: url(${Fonts.FiraSans_Regular}) format('woff2');
 }
 
 @font-face {
   font-family: 'Fira Sans';
-  src: url('/src/assets/fonts/FiraSans/fira-sans-v17-latin-500.woff2') format('woff2');
+  src: url(${Fonts.FiraSans_500}) format('woff2');
 }
 
 @font-face {
   font-family: 'Oswald';
-  src: url('/src/assets/fonts/Oswald/oswald-v53-latin-regular.woff2') format('woff2');
+  src: url(${Fonts.Oswald_Regular}) format('woff2');
 }
 
 @font-face {
   font-family: 'Oswald';
-  src: url('/src/assets/fonts/Oswald/oswald-v53-latin-700.woff2') format('woff2');
+  src: url(${Fonts.Oswald_700}) format('woff2');
 }
 
 @font-face {
   font-family: 'Oswald';
-  src: url('/src/assets/fonts/Oswald/oswald-v53-latin-500.woff2') format('woff2');
+  src: url(${Fonts.Oswald_500}) format('woff2');
 }
 
 @font-face {
   font-family: 'CA Saygon Text';
-  src: url('/src/assets/fonts/CASaygonText/CASaygonText-Regular.woff2') format('woff2');
+  src: url(${Fonts.CASaygonText_Regular}) format('woff2');
 }
 
 @font-face {
   font-family: 'FONTSPRING DEMO - All Round Gothic Thick';
-  src: url('/src/assets/fonts/Fontspring-demo-AllRoundGothic/All-Round-Gothic-Medium.woff2') format('woff2');
+  src: url(${Fonts.AllRoundGothic_Medium}) format('woff2');
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url('/src/assets/fonts/Inter/inter-v13-latin-regular.woff2') format('woff2');
+  src: url(${Fonts.Inter_Regular}) format('woff2');
 }
 
   body {

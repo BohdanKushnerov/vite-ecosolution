@@ -137,26 +137,17 @@ export const SliderButtonRigth = styled.button`
 
 export const SwiperWrap = styled.div`
   width: 320px;
-  height: 318px;
+  /* height: 318px; */
   flex-shrink: 0;
 
   @media (min-width: 768px) {
     width: 100%;
-    height: 322px;
-  }
-`;
-
-export const Image = styled.img`
-  width: 320px;
-  height: 168px;
-
-  @media (min-width: 768px) {
-    width: 342px;
+    /* height: 322px; */
   }
 
   @media (min-width: 1440px) {
-    width: 596px;
-    height: 296px;
+    width: 100%;
+    /* height: 322px; */
   }
 `;
 
