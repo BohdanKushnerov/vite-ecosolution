@@ -4,7 +4,7 @@ import ModalWindow from "components/common/ModalWindow/ModalWindow";
 import ButtonCloseMenu from "components/HeaderSection/ButtonCloseMenu/ButtonCloseMenu";
 import ButtonMenuFollowSection from "components/HeaderSection/ButtonMenuFollowSection/ButtonMenuFollowSection";
 import { ButtonMenuFollowSectionWrap, HeaderMenuModalWrap } from "./HeaderMenuModal.styled";
-import SocialIcons from "components/HeaderSection/SocialIcons/SocialIcons";
+import SocialIcons from "components/common/SocialIcons/SocialIcons";
 
 const buttonsFollowData = [
   { id: 1, label: "Main" },

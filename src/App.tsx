@@ -7,6 +7,7 @@ import About from "components/AboutSection/About/About";
 import Electricity from "components/ElectricitySection/Electricity/Electricity";
 import Cases from "components/CasesSection/Cases/Cases";
 import Questions from "components/QuestionsSection/Questions/Questions";
+import ContactUs from "components/ContactUsSection/ContactUs/ContactUs";
 import GlobalStyles from "assets/globalStyles";
 
 const App: FC = () => {
@@ -20,6 +21,7 @@ const App: FC = () => {
         <Electricity />
         <Cases />
         <Questions />
+        <ContactUs />
       </MainContainer>
     </>
   );
