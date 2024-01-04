@@ -9,13 +9,21 @@ import {
   Address,
   PhonesWrap,
   ConnectionLink,
+  Form,
+  Label,
+  Input,
+  InputName,
+  LabelTextArea,
+  Textarea,
+  SubmitButtonWrap,
 } from "./ContactUs.styled";
 import sprite from "assets/sprite.svg";
+import SecondaryButton from "components/common/Buttons/SecondaryButton/SecondaryButton";
 
 const ContactUs: FC = () => {
   return (
     <Section>
-      <ContactUsTitle>ContactUs</ContactUsTitle>
+      <ContactUsTitle>Contact Us</ContactUsTitle>
       <Address>
         <div>
           <ContactSubtitle>Phone:</ContactSubtitle>
@@ -75,7 +83,35 @@ const ContactUs: FC = () => {
         </div>
       </Address>
 
-      <form action="">{/*  */}</form>
+      <Form action="">
+        <Label htmlFor="fullName">
+          <InputName>* Full name:</InputName>
+          <Input type="text" id="fullName" />
+        </Label>
+        <Label htmlFor="email">
+          <InputName>* E-mail:</InputName>
+          <Input type="email" id="email" />
+        </Label>
+        <Label htmlFor="phone">
+          <InputName>* Phone:</InputName>
+          <Input type="tel" id="phone" />
+        </Label>
+
+        <LabelTextArea htmlFor="message">
+          <InputName>Message:</InputName>
+          <Textarea
+            id="message"
+            name="message"
+            cols={30}
+            rows={10}
+            placeholder="My message...."
+          />
+        </LabelTextArea>
+
+        <SubmitButtonWrap>
+          <SecondaryButton type="submit" textContent="Send" />
+        </SubmitButtonWrap>
+      </Form>
     </Section>
   );
 };

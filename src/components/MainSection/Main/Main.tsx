@@ -20,7 +20,7 @@ const Main: FC = () => {
             sources, generating power generation using energy wind, sun, water,
             biomass
           </MainParagraph>
-          <SecondaryButton textContent="Learn More" />
+          <SecondaryButton type="button" textContent="Learn More" />
         </MainParagraphButtonWrap>
       </MainContentWrap>
     </SectionAndBeforeLine>
