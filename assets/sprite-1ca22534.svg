@@ -78,5 +78,12 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M26.667 22.667h-6.227v6.667h8.893v-4c0-1.467-1.2-2.667-2.667-2.667z"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M16.693 2.76l0.707 1.413c0.093 0.2 0.347 0.387 0.56 0.413l1.28 0.213c0.813 0.133 1.013 0.733 0.427 1.307l-1 1c-0.173 0.173-0.267 0.493-0.213 0.72l0.28 1.227c0.227 0.973-0.293 1.347-1.147 0.84l-1.2-0.707c-0.213-0.133-0.573-0.133-0.787 0l-1.2 0.707c-0.853 0.507-1.373 0.133-1.147-0.84l0.28-1.227c0.053-0.227-0.040-0.56-0.213-0.72l-0.987-0.987c-0.587-0.587-0.4-1.173 0.427-1.307l1.28-0.213c0.213-0.040 0.467-0.227 0.56-0.413l0.707-1.413c0.387-0.773 1-0.773 1.387-0.013z"></path>
 </symbol>
+<symbol id="icon-add" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M8 16h16"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M16 24v-16"></path>
+</symbol>
+<symbol id="icon-minus" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M8 16h16"></path>
+</symbol>
 </defs>
 </svg>
