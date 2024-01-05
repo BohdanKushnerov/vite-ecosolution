@@ -5,11 +5,12 @@ import sprite from "assets/sprite.svg";
 interface ISecondaryButton {
   type: "button" | "submit";
   textContent: string;
+  followTo?: () => void;
 }
 
-const SecondaryButton: FC<ISecondaryButton> = ({ type, textContent }) => {
+const SecondaryButton: FC<ISecondaryButton> = ({ type, textContent, followTo }) => {
   return (
-    <Button type={type}>
+    <Button type={type} onClick={followTo}>
       {textContent}
       <IconWrap>
         <svg width={14} height={14}>

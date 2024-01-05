@@ -1,8 +1,10 @@
 import { FC } from "react";
 
+import ContactUsForm from "../ContactUsForm/ContactUsForm";
+import SocialIcons from "components/common/SocialIcons/SocialIcons";
+import SECTION_NAMES from "constants/sectionNames";
 import {
   ContactSubtitle,
-  Connection,
   ContactUsTitle,
   Section,
   Address,
@@ -11,66 +13,57 @@ import {
   ContactWrap,
   AddressFormWrap,
 } from "./ContactUs.styled";
-import ContactUsForm from "../ContactUsForm/ContactUsForm";
 import sprite from "assets/sprite.svg";
-import SocialIcons from "components/common/SocialIcons/SocialIcons";
 
 const ContactUs: FC = () => {
   return (
-    <Section>
+    <Section id={SECTION_NAMES.CONTACT}>
       <ContactUsTitle>Contact Us</ContactUsTitle>
       <AddressFormWrap>
         <Address>
           <ContactWrap>
             <ContactSubtitle>Phone:</ContactSubtitle>
             <PhonesWrap>
-              <Connection>
-                <svg width={24} height={24} stroke="#173d33" fill="#FFFFFF">
+              <ConnectionLink href="tel:+38(093)1234567" target="blank">
+                <svg width={24} height={24} stroke="#173d33" fill="transparent">
                   <use
                     href={sprite + "#icon-call"}
                     stroke="#173d33"
                     fill="#FFFFFF"
                   />
                 </svg>
-                <ConnectionLink href="tel:+38(093)1234567">
-                  38 (098) 12 34 567
-                </ConnectionLink>
-              </Connection>
-              <Connection>
-                <svg width={24} height={24} stroke="#173d33" fill="#FFFFFF">
-                  <use
-                    href={sprite + "#icon-call"}
-                    stroke="#173d33"
-                    fill="#FFFFFF"
-                  />
+                38 (098) 12 34 567
+              </ConnectionLink>
+              <ConnectionLink href="tel:+38(093)1234567" target="blank">
+                <svg width={24} height={24} stroke="#173d33" fill="transparent">
+                  <use href={sprite + "#icon-call"} />
                 </svg>
-                <ConnectionLink href="tel:+38(093)1234567">
-                  38 (093) 12 34 567
-                </ConnectionLink>
-              </Connection>
+                38 (093) 12 34 567
+              </ConnectionLink>
             </PhonesWrap>
           </ContactWrap>
 
           <ContactWrap>
             <ContactSubtitle>E-mail:</ContactSubtitle>
-            <Connection>
-              <svg width={24} height={24} stroke="#173d33" fill="#FFFFFF">
+            <ConnectionLink href="mailto:office@ecosolution.com" target="blank">
+              <svg width={24} height={24} stroke="#173d33" fill="transparent">
                 <use href={sprite + "#icon-sms"} />
               </svg>
-              <ConnectionLink href="mailto:office@ecosolution.com">
-                office@ecosolution.com
-              </ConnectionLink>
-            </Connection>
+              office@ecosolution.com
+            </ConnectionLink>
           </ContactWrap>
 
           <ContactWrap>
             <ContactSubtitle>Address:</ContactSubtitle>
-            <Connection>
-              <svg width={24} height={24} stroke="#173d33" fill="#FFFFFF">
+            <ConnectionLink
+              href="https://www.google.com.ua/maps/search/79005,+Ukraine,+Lvivstreet.+Shota+Rustaveli,+7/@49.8313557,24.0323843,17z/data=!3m1!4b1?entry=ttu"
+              target="blank"
+            >
+              <svg width={24} height={24} stroke="#173d33" fill="transparent">
                 <use href={sprite + "#icon-map"} />
               </svg>
-              <p>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</p>
-            </Connection>
+              79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
+            </ConnectionLink>
           </ContactWrap>
 
           <ContactWrap>

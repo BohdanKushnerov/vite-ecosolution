@@ -76,7 +76,7 @@ export const ContactSubtitle = styled.h3`
   letter-spacing: -0.64px;
 `;
 
-export const Connection = styled.div`
+export const ConnectionLink = styled.a`
   display: flex;
   align-items: center;
   gap: 8px;
@@ -88,19 +88,30 @@ export const Connection = styled.div`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.9px;
+  cursor: pointer;
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  p {
+    width: 212px;
+
+    @media (min-width: 1440px) {
+      width: 434px;
+    }
+  }
 
   @media (min-width: 1440px) {
     font-size: 24px;
     letter-spacing: -0.96px;
   }
-`;
-
-export const ConnectionLink = styled.a`
-  color: inherit;
-  cursor: pointer;
 
   &:hover {
+    svg use {
+      stroke: #97d28b;
+    }
     color: #97d28b;
   }
 `;

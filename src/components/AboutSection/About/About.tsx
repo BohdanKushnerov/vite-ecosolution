@@ -1,6 +1,7 @@
 import { FC } from "react";
 
 import ImageTurbina from "../Pictures/ImageTurbinaPicture/ImageTurbinaPicture";
+import SECTION_NAMES from "constants/sectionNames";
 import {
   AboutText,
   AboutTitle,
@@ -21,7 +22,7 @@ import SolarPanelsPicture from "../Pictures/SolarPanelsPicture/SolarPanelsPictur
 
 const About: FC = () => {
   return (
-    <section>
+    <section id={SECTION_NAMES.ABOUT}>
       <EcoInfo>
         <Street>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</Street>
         <Email>office@ecosolution.com</Email>
@@ -43,7 +44,7 @@ const About: FC = () => {
           <ValueTitleSvgWrap>
             <svg width={16} height={16}>
               <use
-                xlinkHref={sprite + "#icon-maximize-circle"}
+                href={sprite + "#icon-maximize-circle"}
                 fill="transparent"
                 stroke="#173D33"
               />
@@ -58,7 +59,7 @@ const About: FC = () => {
           <ValueTitleSvgWrap>
             <svg width={16} height={16}>
               <use
-                xlinkHref={sprite + "#icon-global-edit"}
+                href={sprite + "#icon-global-edit"}
                 fill="transparent"
                 stroke="#173D33"
               />
@@ -82,7 +83,7 @@ const About: FC = () => {
           <ValueTitleSvgWrap>
             <svg width={16} height={16}>
               <use
-                xlinkHref={sprite + "#icon-cpu-charge"}
+                href={sprite + "#icon-cpu-charge"}
                 fill="transparent"
                 stroke="#173D33"
               />
@@ -97,7 +98,7 @@ const About: FC = () => {
           <ValueTitleSvgWrap>
             <svg width={16} height={16}>
               <use
-                xlinkHref={sprite + "#icon-ranking"}
+                href={sprite + "#icon-ranking"}
                 fill="transparent"
                 stroke="#173D33"
               />

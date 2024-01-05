@@ -11,8 +11,14 @@ import {
   FooterSection,
 } from "./Footer.styled";
 import sprite from "assets/sprite.svg";
+import scrollToSection from "utils/scrollToSection";
+import SECTION_NAMES from "constants/sectionNames";
 
 const Footer: FC = () => {
+  const handleClickFollowTo = () => {
+    scrollToSection(SECTION_NAMES.MAIN);
+  };
+
   return (
     <FooterSection>
       <LogoIconsButtonWrap>
@@ -20,7 +26,7 @@ const Footer: FC = () => {
         <IconsWrap>
           <SocialIcons colorplan="primary" space={8} />
         </IconsWrap>
-        <ButtonUp>
+        <ButtonUp onClick={handleClickFollowTo}>
           <svg width={16} height={16}>
             <use href={sprite + "#icon-arrow-right"} />
           </svg>

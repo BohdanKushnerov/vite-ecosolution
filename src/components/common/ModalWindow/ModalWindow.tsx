@@ -23,6 +23,15 @@ const ModalWindow: FC<IModalWindowProps> = ({
     }
   };
 
+  // return (
+  //   <ModalWindowWrap
+  //     onClick={handleBackdropClick}
+  //     className={`absolute top-0 left-0 z-10 w-screen h-screen bg-transparent`}
+  //   >
+  //     {children}
+  //   </ModalWindowWrap>
+  // );
+
   return createPortal(
     <ModalWindowWrap
       onClick={handleBackdropClick}

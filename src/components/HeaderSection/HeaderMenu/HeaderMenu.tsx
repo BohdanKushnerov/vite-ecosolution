@@ -12,7 +12,7 @@ const HeaderMenu: FC = () => {
   };
 
   return (
-    <>
+    <div>
       <HeaderMenuButton onClick={handleToggleModal}>
         <svg width={16} height={16}>
           <use href={sprite + "#icon-menu"} stroke={"#292D32"} />
@@ -21,7 +21,7 @@ const HeaderMenu: FC = () => {
       {isOpenHeaderMenuModal && (
         <HeaderMenuModal handleToggleModal={handleToggleModal} />
       )}
-    </>
+    </div>
   );
 };
 

@@ -3,20 +3,13 @@ import { FC } from "react";
 import ModalWindow from "common/ModalWindow/ModalWindow";
 import ButtonCloseMenu from "components/HeaderSection/ButtonCloseMenu/ButtonCloseMenu";
 import ButtonMenuFollowSection from "components/HeaderSection/ButtonMenuFollowSection/ButtonMenuFollowSection";
+import SocialIcons from "components/common/SocialIcons/SocialIcons";
+import buttonsFollowData from "constants/buttonsFollowData";
 import {
   ButtonMenuFollowSectionWrap,
   HeaderMenuModalWrap,
   ModalSocialIconsWrap,
 } from "./HeaderMenuModal.styled";
-import SocialIcons from "components/common/SocialIcons/SocialIcons";
-
-const buttonsFollowData = [
-  { id: 1, label: "Main" },
-  { id: 2, label: "About" },
-  { id: 3, label: "Cases" },
-  { id: 4, label: "FAQ" },
-  { id: 5, label: "Contact" },
-];
 
 interface IHeaderMenuModal {
   handleToggleModal: () => void;
@@ -29,7 +22,12 @@ const HeaderMenuModal: FC<IHeaderMenuModal> = ({ handleToggleModal }) => {
         <ButtonCloseMenu handleToggleModal={handleToggleModal} />
         <ButtonMenuFollowSectionWrap>
           {buttonsFollowData.map((button) => (
-            <ButtonMenuFollowSection key={button.id} label={button.label} />
+            <ButtonMenuFollowSection
+              key={button.id}
+              label={button.label}
+              sectionName={button.sectionName}
+              handleToggleModal={handleToggleModal}
+            />
           ))}
         </ButtonMenuFollowSectionWrap>
         {/* icons */}

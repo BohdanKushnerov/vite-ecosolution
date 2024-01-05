@@ -1,10 +1,25 @@
-import styled from "styled-components";
+import { ReactNode } from "react";
+import styled, { IStyledComponent } from "styled-components";
 
-export const LogoWrap = styled.a`
+interface ILogoWrapProps {
+  href: string;
+  target: string;
+  $scrolled?: boolean | null;
+  children: ReactNode;
+}
+
+export const LogoWrap: IStyledComponent<
+  "web",
+  ILogoWrapProps
+> = styled.a<ILogoWrapProps>`
   display: flex;
   align-items: center;
   gap: 4px;
   cursor: pointer;
+
+  & > p {
+    color: ${({ $scrolled }) => $scrolled && "#97d28b"};
+  }
 
   &:hover {
     & > p {
@@ -37,7 +52,7 @@ export const LogoGreenergy = styled.p`
 `;
 
 export const LogoGreen = styled.span`
-  color: #173d33;
+  color: "#173d33";
   font-family: "CA Saygon Text";
   font-size: 10px;
   font-style: normal;

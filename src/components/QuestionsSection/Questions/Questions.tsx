@@ -1,6 +1,8 @@
 import { FC, useState } from "react";
 
 import PrimaryButton from "common/Buttons/PrimaryButton/PrimaryButton";
+import scrollToSection from "utils/scrollToSection";
+import SECTION_NAMES from "constants/sectionNames";
 import questions from "constants/questions";
 import {
   AllQuestionsWrap,
@@ -23,8 +25,12 @@ const Questions: FC = () => {
     setCurrentAnswer(id);
   };
 
+  const handleClickFollowTo = () => {
+    scrollToSection(SECTION_NAMES.CONTACT);
+  };
+
   return (
-    <Section>
+    <Section id={SECTION_NAMES.QUESTIONS}>
       <QuestionSectionTitleNotFoundWrap>
         <QuestionSectionTitle>Frequently Asked Questions</QuestionSectionTitle>
 
@@ -32,7 +38,10 @@ const Questions: FC = () => {
           <NotFoundQuestion>
             Didn't find the answer to your question?
           </NotFoundQuestion>
-          <PrimaryButton textContent={"Contact Us"} />
+          <PrimaryButton
+            textContent={"Contact Us"}
+            followTo={handleClickFollowTo}
+          />
         </NotFoundQuestionButtonWrap>
       </QuestionSectionTitleNotFoundWrap>
 
@@ -64,7 +73,10 @@ const Questions: FC = () => {
         <NotFoundQuestion>
           Didn't find the answer to your question?
         </NotFoundQuestion>
-        <PrimaryButton textContent={"Contact Us"} />
+        <PrimaryButton
+          textContent={"Contact Us"}
+          followTo={handleClickFollowTo}
+        />
       </NotFoundQuestionButtonWrap>
     </Section>
   );

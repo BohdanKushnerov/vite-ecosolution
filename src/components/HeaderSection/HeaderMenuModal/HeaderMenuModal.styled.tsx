@@ -8,7 +8,7 @@ export const HeaderMenuModalWrap = styled.div`
   align-items: start;
   flex-shrink: 0;
   width: 320px;
-  height: calc(100% - 36px);
+  height: calc(100% - 72px);
   padding: 24px;
 
   border-radius: 25px;
@@ -18,13 +18,13 @@ export const HeaderMenuModalWrap = styled.div`
   @media (min-width: 768px) {
     top: 42px;
     right: 30px;
-    height: calc(100% - 42px);
+    height: calc(100% - 84px);
   }
 
   @media (min-width: 1440px) {
     top: 30px;
     right: 100px;
-    height: calc(100% - 30px);
+    height: calc(100% - 60px);
   }
 `;
 
@@ -40,4 +40,3 @@ export const ModalSocialIconsWrap = styled.div`
   flex: 1;
   align-items: flex-end;
 `;
-

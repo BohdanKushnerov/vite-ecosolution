@@ -55,6 +55,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Fira Sans',  sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        background: #F3F5FA;
       }
 
       code {

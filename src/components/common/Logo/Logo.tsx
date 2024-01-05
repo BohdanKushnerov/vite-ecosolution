@@ -8,9 +8,13 @@ import {
   LogoWrap,
 } from "./Logo.styled";
 
-const Logo: FC = () => {
+interface ILogo {
+  $scrolled?: boolean;
+}
+
+const Logo: FC<ILogo> = ({ $scrolled }) => {
   return (
-    <LogoWrap href="">
+    <LogoWrap href="/" target="blank" $scrolled={$scrolled ?? null}>
       <svg width={31} height={18}>
         <use href={sprite + "#icon-logo"} />
       </svg>

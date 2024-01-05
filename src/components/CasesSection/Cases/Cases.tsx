@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import SlidePicture from "../SlidePicture/SlidePicture";
 import useResizeWindow from "hooks/useResizeWindow";
 import swiperData from "constants/swiperData";
+import SECTION_NAMES from "constants/sectionNames";
 import {
   CasesTitle,
   IconSlideWrap,
@@ -31,7 +32,7 @@ const Cases: FC = () => {
   const screen = useResizeWindow(768, 1440);
 
   return (
-    <section>
+    <section id={SECTION_NAMES.CASES}>
       <TitleCounterAndButtonWrap>
         <CasesTitle>Successful cases of our company</CasesTitle>
         <SliderCounterAndButtonWrap>

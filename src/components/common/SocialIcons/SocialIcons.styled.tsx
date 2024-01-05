@@ -17,12 +17,9 @@ interface ISocialIconsWrapProps {
 export const SocialIconsWrap: IStyledComponent<
   "web",
   ISocialIconsWrapProps
-> = styled.div.attrs<ISocialIconsWrapProps>(({ $space }) => ({
-  style: {
-    gap: `${$space}px`,
-  },
-}))<ISocialIconsWrapProps>`
+> = styled.div<ISocialIconsWrapProps>`
   display: flex;
+  gap: ${({ $space }) => `${$space}px`};
 `;
 
 export const SocialIcon: IStyledComponent<
@@ -32,7 +29,8 @@ export const SocialIcon: IStyledComponent<
   cursor: pointer;
   stroke: ${({ $colorplan }) =>
     $colorplan === "primary" ? "#173d33" : "#ffffff"};
-  fill: ${({ $colorplan }) => ($colorplan === "primary" ? "#173d33" : "#ffffff")};
+  fill: ${({ $colorplan }) =>
+    $colorplan === "primary" ? "#173d33" : "#ffffff"};
 
   &:hover {
     fill: #97d28b;
