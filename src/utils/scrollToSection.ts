@@ -1,9 +1,11 @@
 const scrollToSection = (sectionId: string) => {
   const section = document.getElementById(sectionId);
   if (section) {
-    section.scrollIntoView({
+    const offset = 76; // header height;
+
+    window.scrollTo({
+      top: section.offsetTop - offset,
       behavior: "smooth",
-      block: "start",
     });
   }
 };

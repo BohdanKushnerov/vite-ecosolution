@@ -22,7 +22,10 @@ const ImageTurbinaPicture: FC = () => {
         srcSet={`${turbineDesk} 1x, ${turbineDesk2x} 2x`}
         media="(min-width: 1440px)"
       />
-      <img src="/src/assets/AboutSectionImages/turbine-desk.webp" />
+      <img
+        src="/src/assets/AboutSectionImages/turbine-desk.webp"
+        alt="turbine"
+      />
     </picture>
   );
 };

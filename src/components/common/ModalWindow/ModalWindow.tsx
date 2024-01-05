@@ -1,10 +1,7 @@
 import { FC, MouseEvent, ReactNode } from "react";
-import { createPortal } from "react-dom";
 
 import useCloseModal from "hooks/useCloseModal";
 import { ModalWindowWrap } from "./ModalWindow.styled";
-
-const modalRoot = document.querySelector("#modal-root")!;
 
 interface IModalWindowProps {
   handleToggleModal: () => void;
@@ -23,23 +20,13 @@ const ModalWindow: FC<IModalWindowProps> = ({
     }
   };
 
-  // return (
-  //   <ModalWindowWrap
-  //     onClick={handleBackdropClick}
-  //     className={`absolute top-0 left-0 z-10 w-screen h-screen bg-transparent`}
-  //   >
-  //     {children}
-  //   </ModalWindowWrap>
-  // );
-
-  return createPortal(
+  return (
     <ModalWindowWrap
       onClick={handleBackdropClick}
       className={`absolute top-0 left-0 z-10 w-screen h-screen bg-transparent`}
     >
       {children}
-    </ModalWindowWrap>,
-    modalRoot
+    </ModalWindowWrap>
   );
 };
 

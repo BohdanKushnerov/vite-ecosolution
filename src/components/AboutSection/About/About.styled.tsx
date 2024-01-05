@@ -1,84 +1,58 @@
 import styled from "styled-components";
 
-export const EcoInfo = styled.div`
-  margin-top: 24px;
-  margin-bottom: 36px;
+export const Section = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-top: 36px;
 
   @media (min-width: 768px) {
-    display: flex;
-
-    margin-top: 16px;
-    margin-bottom: 40px;
-  }
-`;
-
-export const Street = styled.p`
-  margin-bottom: 8px;
-
-  color: #173d33;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.64px;
-  text-align: center;
-
-  @media (min-width: 768px) {
-    text-align: start;
-  }
-`;
-
-export const Email = styled.p`
-  color: #173d33;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.64px;
-  text-align: center;
-
-  @media (min-width: 768px) {
-    margin-left: 77px;
-
-    text-align: start;
+    gap: 100px;
+    margin-top: 100px;
   }
 
   @media (min-width: 1440px) {
-    margin-left: 492px;
+    gap: 122px;
+    margin-top: 120px;
   }
 `;
 
-export const Ecosolution = styled.p`
-  display: none;
-
-  color: #173d33;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.64px;
-
+export const TitleTextWrap = styled.div`
   @media (min-width: 768px) {
-    display: block;
-    margin-left: auto;
+    display: flex;
+    gap: 82px;
+  }
+  @media (min-width: 1440px) {
+    gap: 254px;
   }
 `;
 
 export const AboutTitle = styled.h2`
-  margin-top: 36px;
-  margin-bottom: 24px;
-
   color: #173d33;
   font-family: "Oswald";
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 100% */
+  line-height: 28px;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    width: 272px;
+
+    font-size: 36px;
+    line-height: 36px; 
+  }
+
+  @media (min-width: 1440px) {
+    width: 365px;
+
+    font-size: 48px;
+    line-height: 48px; 
+  }
 `;
 
 export const AboutText = styled.p`
-  margin-bottom: 36px;
+  margin-top: 24px;
 
   color: #173d33;
   text-align: justify;
@@ -87,6 +61,20 @@ export const AboutText = styled.p`
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.64px;
+
+  @media (min-width: 768px) {
+    /* 342px + 11px */
+    width: 353px;
+    margin-top: 0;
+    padding-left: 11px;
+
+    border-left: 1px solid #97d28b;
+  }
+
+  @media (min-width: 1440px) {
+    width: 620px;
+    padding-left: 161px;
+  }
 `;
 
 export const ValueList = styled.ul`
@@ -114,7 +102,6 @@ export const ValueItem = styled.li`
   @media (min-width: 1440px) {
     width: 274px;
     height: 339px;
-
     padding: 48px 24px;
   }
 `;
@@ -127,7 +114,7 @@ export const ValueImage = styled.li`
   }
 `;
 
-export const ValueTitleSvgWrap = styled.div`
+export const ValueSubtitleSvgWrap = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
@@ -151,7 +138,7 @@ export const ValueTitleSvgWrap = styled.div`
   }
 `;
 
-export const ValueItemTitle = styled.h3`
+export const ValueItemSubtitle = styled.h3`
   display: flex;
   flex-direction: column;
 
@@ -160,7 +147,7 @@ export const ValueItemTitle = styled.h3`
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   text-transform: uppercase;
 
   @media (min-width: 768px) {
@@ -169,7 +156,7 @@ export const ValueItemTitle = styled.h3`
 
   @media (min-width: 1440px) {
     font-size: 32px;
-    line-height: 48px; /* 150% */
+    line-height: 48px;
   }
 `;
 

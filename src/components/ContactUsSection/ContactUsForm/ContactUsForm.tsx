@@ -13,7 +13,7 @@ import SecondaryButton from "common/Buttons/SecondaryButton/SecondaryButton";
 
 const ContactUsForm: FC = () => {
   return (
-    <Form action="">
+    <Form action="/path">
       <Label htmlFor="fullName">
         <InputName>* Full name:</InputName>
         <Input type="text" id="fullName" placeholder="John Rosie" />

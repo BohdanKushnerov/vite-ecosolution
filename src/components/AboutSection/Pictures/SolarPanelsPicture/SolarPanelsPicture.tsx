@@ -16,7 +16,10 @@ const SolarPanelsPicture: FC = () => {
         srcSet={`${solarPanelsDesk} 1x, ${solarPanelsDesk2x} 2x`}
         media="(min-width: 1440px)"
       />
-      <img src="/src/assets/AboutSectionImages/Values/wind-farms-desk.webp" />
+      <img
+        src="/src/assets/AboutSectionImages/Values/wind-farms-desk.webp"
+        alt="solar-panels"
+      />
     </picture>
   );
 };

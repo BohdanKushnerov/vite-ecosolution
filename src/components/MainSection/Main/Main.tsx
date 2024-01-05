@@ -5,11 +5,17 @@ import scrollToSection from "utils/scrollToSection";
 import SECTION_NAMES from "constants/sectionNames";
 import {
   MainParagraph,
-  SectionAndBeforeLine,
   MainTitle,
   MainParagraphButtonWrap,
   MainContentWrap,
+  EcoInfo,
+  Street,
+  Email,
+  Ecosolution,
+  Section,
+  Address,
 } from "./Main.styled";
+import ImageTurbinaPicture from "../Picture/ImageTurbinaPicture/ImageTurbinaPicture";
 
 const Main: FC = () => {
   const handleClickFollowTo = () => {
@@ -17,7 +23,7 @@ const Main: FC = () => {
   };
 
   return (
-    <SectionAndBeforeLine id={SECTION_NAMES.MAIN}>
+    <Section id={SECTION_NAMES.MAIN}>
       <MainContentWrap>
         <MainTitle>renewable energy for any task</MainTitle>
         <MainParagraphButtonWrap>
@@ -33,7 +39,17 @@ const Main: FC = () => {
           />
         </MainParagraphButtonWrap>
       </MainContentWrap>
-    </SectionAndBeforeLine>
+      {/*  */}
+      <EcoInfo>
+        <Address>
+          <Street>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</Street>
+          <Email>office@ecosolution.com</Email>
+        </Address>
+        <Ecosolution>ecosolution © 2023</Ecosolution>
+      </EcoInfo>
+      {/* ImageTurbina */}
+      <ImageTurbinaPicture />
+    </Section>
   );
 };
 

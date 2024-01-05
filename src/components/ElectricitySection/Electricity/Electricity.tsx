@@ -7,13 +7,14 @@ import {
   ElectricityCounterWrap,
   ElectricityTitle,
   KWHSpan,
+  Section,
 } from "./Electricity.styled";
 
 const Electricity: FC = () => {
   const counter = useCounterInterval();
 
   return (
-    <section>
+    <Section>
       <ElectricityTitle>Electricity we produced for all time</ElectricityTitle>
       <ElectricityCounterWrap>
         <ElectricityCounter>
@@ -21,7 +22,7 @@ const Electricity: FC = () => {
         </ElectricityCounter>
         <KWHSpan>kWh</KWHSpan>
       </ElectricityCounterWrap>
-    </section>
+    </Section>
   );
 };
 

@@ -7,11 +7,13 @@ export const Section = styled.section`
     display: flex;
     flex-direction: row-reverse;
     gap: 24px;
+    margin-top: 100px;
   }
 
   @media (min-width: 1440px) {
     justify-content: start;
     gap: 185px;
+    margin-top: 120px;
   }
 `;
 export const QuestionSectionTitleNotFoundWrap = styled.div`
@@ -30,22 +32,21 @@ export const QuestionSectionTitle = styled.h2`
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 100% */
+  line-height: 28px;
   text-transform: uppercase;
 
   @media (min-width: 768px) {
-    /* width: 347px; */
     width: 342px;
 
     font-size: 36px;
-    line-height: 36px; /* 100% */
+    line-height: 36px;
   }
 
   @media (min-width: 1440px) {
     width: 398px;
 
     font-size: 48px;
-    line-height: 48px; /* 100% */
+    line-height: 48px; 
   }
 `;
 
@@ -80,6 +81,10 @@ export const OneQuestionWrap = styled.div`
 export const IconButton = styled.div`
   padding-top: 21px;
 
+  svg {
+    cursor: pointer;
+  }
+
   svg use {
     stroke: #97d28b;
   }
@@ -91,10 +96,6 @@ export const IconButton = styled.div`
     }
   }
 `;
-
-// export const QuestionTitleAnswerWrap = styled.div`
-//   /*  */
-// `;
 
 export const QuestionTitle = styled.h3`
   width: 296px;

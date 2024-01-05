@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Button = styled.button`
   display: flex;
+  width: 143px;
   height: 39px;
   padding: 4px 4px 4px 16px;
   justify-content: center;
@@ -17,7 +18,7 @@ export const Button = styled.button`
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 112.5% */
+  line-height: 18px;
   letter-spacing: -0.64px;
   cursor: pointer;
 

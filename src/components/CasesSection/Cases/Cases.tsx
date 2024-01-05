@@ -10,7 +10,8 @@ import swiperData from "constants/swiperData";
 import SECTION_NAMES from "constants/sectionNames";
 import {
   CasesTitle,
-  IconSlideWrap,
+  IconSlideLink,
+  Section,
   SlideDate,
   SlideDescDateWrap,
   SlideDescription,
@@ -32,7 +33,7 @@ const Cases: FC = () => {
   const screen = useResizeWindow(768, 1440);
 
   return (
-    <section id={SECTION_NAMES.CASES}>
+    <Section id={SECTION_NAMES.CASES}>
       <TitleCounterAndButtonWrap>
         <CasesTitle>Successful cases of our company</CasesTitle>
         <SliderCounterAndButtonWrap>
@@ -73,15 +74,16 @@ const Cases: FC = () => {
               <SlidePicture
                 imageSrc={data.imageSrc}
                 imageSrc2x={data.imageSrc2x}
+                alt={data.description}
               />
               <SlideTextContentWrap>
                 <SlideTitleIconWrap>
                   <SlideTitle>{data.title}</SlideTitle>
-                  <IconSlideWrap>
+                  <IconSlideLink href="/" target="blank">
                     <svg width={28} height={28}>
                       <use href={sprite + "#icon-arrow-right-up"} />
                     </svg>
-                  </IconSlideWrap>
+                  </IconSlideLink>
                 </SlideTitleIconWrap>
                 <SlideDescDateWrap>
                   <SlideDescription>{data.description}</SlideDescription>
@@ -92,7 +94,7 @@ const Cases: FC = () => {
           ))}
         </Swiper>
       </SwiperWrap>
-    </section>
+    </Section>
   );
 };
 

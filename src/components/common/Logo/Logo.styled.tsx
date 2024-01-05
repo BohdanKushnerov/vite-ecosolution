@@ -46,7 +46,7 @@ export const LogoGreenergy = styled.p`
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
-  line-height: 9px; /* 90% */
+  line-height: 9px;
   letter-spacing: -0.4px;
   text-transform: uppercase;
 `;

@@ -13,8 +13,6 @@ const Header: FC = () => {
   const screen = useResizeWindow(768, 1440);
   const scrolled = useScroll();
 
-  console.log(scrolled);
-
   const handleClickFollowTo = () => {
     scrollToSection(SECTION_NAMES.CONTACT);
   };

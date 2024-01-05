@@ -101,11 +101,18 @@ export const AddressCopywrigthingWrap = styled.div`
   }
 `;
 
-export const Address = styled.div`
+export const Address = styled.address`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
+
+  color: #173d33;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
 
   @media (min-width: 768px) {
     flex-direction: row;

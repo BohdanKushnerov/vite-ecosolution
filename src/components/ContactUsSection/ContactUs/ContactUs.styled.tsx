@@ -66,7 +66,7 @@ export const PhonesWrap = styled.div`
   gap: 12px;
 `;
 
-export const ContactSubtitle = styled.h3`
+export const ContactSubtitle = styled.p`
   color: #173d33;
   text-align: justify;
   font-size: 16px;

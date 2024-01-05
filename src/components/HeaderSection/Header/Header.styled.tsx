@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const HeaderWrap = styled.header`
   position: fixed;
-  /* position: relative; */
   top: 0;
   z-index: 2;
   display: flex;
@@ -23,8 +22,6 @@ export const HeaderWrap = styled.header`
 `;
 
 export const HeaderMenuAndButtonWrap = styled.div`
-  /* position: relative; */
-  
   @media (min-width: 768px) {
     display: flex;
     gap: 12px;

@@ -1,20 +1,22 @@
 import styled from "styled-components";
 
-export const TitleCounterAndButtonWrap = styled.div`
+export const Section = styled.section`
   margin-top: 36px;
-  margin-bottom: 24px;
 
   @media (min-width: 768px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
     margin-top: 100px;
-    margin-bottom: 32px;
   }
 
   @media (min-width: 1440px) {
     margin-top: 120px;
-    margin-bottom: 120px;
+  }
+`;
+
+export const TitleCounterAndButtonWrap = styled.div`
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
 `;
 export const CasesTitle = styled.h2`
@@ -25,27 +27,24 @@ export const CasesTitle = styled.h2`
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 100% */
+  line-height: 28px;
   text-transform: uppercase;
 
   @media (max-width: 767px) {
-    margin-bottom: 24px;
   }
 
   @media (min-width: 768px) {
-    /* width: 272px; */
     width: 276px;
-    /* margin-bottom: 32px; */
 
     font-size: 36px;
-    line-height: 36px; /* 100% */
+    line-height: 36px;
   }
 
   @media (min-width: 1440px) {
     width: 398px;
 
     font-size: 48px;
-    line-height: 48px; /* 100% */
+    line-height: 48px;
   }
 `;
 
@@ -53,9 +52,10 @@ export const SliderCounterAndButtonWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: end;
-  /* margin-bottom: 26px; */
+  margin-top: 24px;
 
   @media (min-width: 768px) {
+    margin-top: 0;
     padding-left: 9px;
 
     border-left: 1px solid #97d28b;
@@ -63,8 +63,6 @@ export const SliderCounterAndButtonWrap = styled.div`
 
   @media (min-width: 1440px) {
     padding-left: 161px;
-
-    /* border-left: 1px solid #97d28b; */
   }
 `;
 
@@ -137,17 +135,17 @@ export const SliderButtonRigth = styled.button`
 
 export const SwiperWrap = styled.div`
   width: 320px;
-  /* height: 318px; */
   flex-shrink: 0;
+  margin-top: 24px;
 
   @media (min-width: 768px) {
     width: 100%;
-    /* height: 322px; */
+    margin-top: 38px;
   }
 
   @media (min-width: 1440px) {
     width: 100%;
-    /* height: 322px; */
+    margin-top: 120px;
   }
 `;
 
@@ -186,7 +184,6 @@ export const SlideTitle = styled.h4`
     height: 72px;
 
     font-size: 20px;
-    /* letter-spacing: -0.75px; */
     letter-spacing: -0.85px;
   }
 
@@ -198,7 +195,7 @@ export const SlideTitle = styled.h4`
   }
 `;
 
-export const IconSlideWrap = styled.a`
+export const IconSlideLink = styled.a`
   display: inline-flex;
   padding: 16px;
   align-items: flex-start;

@@ -17,14 +17,14 @@ const App: FC = () => {
       <GlobalStyles />
       <MainContainer>
         <Header />
-        {/* <main> */}
-        <Main />
-        <About />
-        <Electricity />
-        <Cases />
-        <Questions />
-        <ContactUs />
-        {/* </main> */}
+        <main>
+          <Main />
+          <About />
+          <Electricity />
+          <Cases />
+          <Questions />
+          <ContactUs />
+        </main>
         <Footer />
       </MainContainer>
     </>
