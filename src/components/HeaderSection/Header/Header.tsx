@@ -1,8 +1,8 @@
 import { FC } from "react";
 
+import Logo from "common/Logo/Logo";
+import PrimaryButton from "common/Buttons/PrimaryButton/PrimaryButton";
 import HeaderMenu from "components/HeaderSection/HeaderMenu/HeaderMenu";
-import Logo from "components/common/Logo/Logo";
-import PrimaryButton from "components/common/Buttons/PrimaryButton/PrimaryButton";
 import useResizeWindow from "hooks/useResizeWindow";
 import { HeaderMenuAndButtonWrap, HeaderWrap } from "./Header.styled";
 

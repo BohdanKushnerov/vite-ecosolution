@@ -87,6 +87,10 @@ const GlobalStyles = createGlobalStyle`
         max-width: 100%;
         height: auto;
       }
+
+      a {
+        text-decoration: none;
+      }
 `;
 
 export default GlobalStyles;

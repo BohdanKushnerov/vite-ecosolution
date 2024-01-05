@@ -1,15 +1,38 @@
-import styled from "styled-components";
+import { ReactNode } from "react";
 
-export const SocialIconsWrap = styled.div`
+import styled, { IStyledComponent } from "styled-components";
+
+interface ISocialIconProps {
+  width: number | string;
+  height: number | string;
+  $colorplan: string;
+  children: ReactNode;
+}
+
+interface ISocialIconsWrapProps {
+  $space: string | number;
+  children: ReactNode;
+}
+
+export const SocialIconsWrap: IStyledComponent<
+  "web",
+  ISocialIconsWrapProps
+> = styled.div.attrs<ISocialIconsWrapProps>(({ $space }) => ({
+  style: {
+    gap: `${$space}px`,
+  },
+}))<ISocialIconsWrapProps>`
   display: flex;
-  flex: 1;
-  align-items: flex-end;
 `;
 
-export const SocialIcon = styled.svg`
+export const SocialIcon: IStyledComponent<
+  "web",
+  ISocialIconProps
+> = styled.svg<ISocialIconProps>`
   cursor: pointer;
-  fill: #ffffff;
-  stroke: #ffffff;
+  stroke: ${({ $colorplan }) =>
+    $colorplan === "primary" ? "#173d33" : "#ffffff"};
+  fill: ${({ $colorplan }) => ($colorplan === "primary" ? "#173d33" : "#ffffff")};
 
   &:hover {
     fill: #97d28b;

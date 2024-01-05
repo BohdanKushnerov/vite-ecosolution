@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import SecondaryButton from "components/common/Buttons/SecondaryButton/SecondaryButton";
+import SecondaryButton from "common/Buttons/SecondaryButton/SecondaryButton";
 import {
   MainParagraph,
   SectionAndBeforeLine,

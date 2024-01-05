@@ -1,9 +1,13 @@
 import { FC } from "react";
 
-import ModalWindow from "components/common/ModalWindow/ModalWindow";
+import ModalWindow from "common/ModalWindow/ModalWindow";
 import ButtonCloseMenu from "components/HeaderSection/ButtonCloseMenu/ButtonCloseMenu";
 import ButtonMenuFollowSection from "components/HeaderSection/ButtonMenuFollowSection/ButtonMenuFollowSection";
-import { ButtonMenuFollowSectionWrap, HeaderMenuModalWrap } from "./HeaderMenuModal.styled";
+import {
+  ButtonMenuFollowSectionWrap,
+  HeaderMenuModalWrap,
+  ModalSocialIconsWrap,
+} from "./HeaderMenuModal.styled";
 import SocialIcons from "components/common/SocialIcons/SocialIcons";
 
 const buttonsFollowData = [
@@ -28,7 +32,10 @@ const HeaderMenuModal: FC<IHeaderMenuModal> = ({ handleToggleModal }) => {
             <ButtonMenuFollowSection key={button.id} label={button.label} />
           ))}
         </ButtonMenuFollowSectionWrap>
-        <SocialIcons />
+        {/* icons */}
+        <ModalSocialIconsWrap>
+          <SocialIcons colorplan="secondary" space={8} />
+        </ModalSocialIconsWrap>
       </HeaderMenuModalWrap>
     </ModalWindow>
   );

@@ -1,9 +1,16 @@
 import styled from "styled-components";
 
-export const LogoWrap = styled.div`
+export const LogoWrap = styled.a`
   display: flex;
   align-items: center;
   gap: 4px;
+  cursor: pointer;
+
+  &:hover {
+    & > p {
+      color: #97d28b;
+    }
+  }
 `;
 
 export const LogoEcosolution = styled.p`

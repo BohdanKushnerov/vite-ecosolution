@@ -10,7 +10,7 @@ import {
 
 const Logo: FC = () => {
   return (
-    <LogoWrap>
+    <LogoWrap href="">
       <svg width={31} height={18}>
         <use href={sprite + "#icon-logo"} />
       </svg>

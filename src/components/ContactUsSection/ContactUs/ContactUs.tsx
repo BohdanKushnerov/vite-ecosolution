@@ -1,6 +1,5 @@
 import { FC } from "react";
 
-import SocialIconsContact from "../SocialIconsContact/SocialIconsContact";
 import {
   ContactSubtitle,
   Connection,
@@ -14,6 +13,7 @@ import {
 } from "./ContactUs.styled";
 import ContactUsForm from "../ContactUsForm/ContactUsForm";
 import sprite from "assets/sprite.svg";
+import SocialIcons from "components/common/SocialIcons/SocialIcons";
 
 const ContactUs: FC = () => {
   return (
@@ -75,7 +75,7 @@ const ContactUs: FC = () => {
 
           <ContactWrap>
             <ContactSubtitle>Social Networks:</ContactSubtitle>
-            <SocialIconsContact />
+            <SocialIcons colorplan="primary" space={32} />
           </ContactWrap>
         </Address>
 

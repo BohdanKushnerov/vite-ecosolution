@@ -70,7 +70,6 @@ export const LabelTextArea = styled.label`
   gap: 8px;
   padding-bottom: 8px;
   width: 294px;
-  /* width: 100px; */
 
   @media (min-width: 1440px) {
     width: 500px;
@@ -90,14 +89,12 @@ export const Textarea = styled.textarea`
   border: none;
   background: transparent;
   border: none;
+  resize: none;
   background: transparent;
   border-bottom: 1px solid #97d28b;
 
   &::placeholder {
     color: #bdbdbd;
-
-    /* font-size: inherit;
-    letter-spacing: inherit; */
   }
 `;
 

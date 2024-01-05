@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
 
-import PrimaryButton from "components/common/Buttons/PrimaryButton/PrimaryButton";
+import PrimaryButton from "common/Buttons/PrimaryButton/PrimaryButton";
 import questions from "constants/questions";
 import {
   AllQuestionsWrap,

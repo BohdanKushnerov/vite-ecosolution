@@ -34,3 +34,10 @@ export const ButtonMenuFollowSectionWrap = styled.div`
   gap: 8px;
   margin-top: 24px;
 `;
+
+export const ModalSocialIconsWrap = styled.div`
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+`;
+

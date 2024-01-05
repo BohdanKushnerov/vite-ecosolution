@@ -76,7 +76,7 @@ export const ContactSubtitle = styled.h3`
   letter-spacing: -0.64px;
 `;
 
-export const Connection = styled.p`
+export const Connection = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
@@ -98,7 +98,6 @@ export const Connection = styled.p`
 
 export const ConnectionLink = styled.a`
   color: inherit;
-  text-decoration: none;
   cursor: pointer;
 
   &:hover {
