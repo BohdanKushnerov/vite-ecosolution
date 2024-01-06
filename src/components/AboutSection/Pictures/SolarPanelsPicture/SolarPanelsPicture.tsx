@@ -5,6 +5,8 @@ import solarPanelsTabl2x from "assets/AboutSectionImages/Values/solar-panels-2xt
 import solarPanelsDesk from "assets/AboutSectionImages/Values/solar-panels-desk.webp";
 import solarPanelsDesk2x from "assets/AboutSectionImages/Values/solar-panels-2xdesk.webp";
 
+console.log("solarPanelsDesk", solarPanelsDesk);
+
 const SolarPanelsPicture: FC = () => {
   return (
     <picture>
@@ -16,10 +18,7 @@ const SolarPanelsPicture: FC = () => {
         srcSet={`${solarPanelsDesk} 1x, ${solarPanelsDesk2x} 2x`}
         media="(min-width: 1440px)"
       />
-      <img
-        src="/src/assets/AboutSectionImages/Values/wind-farms-desk.webp"
-        alt="solar-panels"
-      />
+      <img src={`${solarPanelsDesk}`} alt="solar-panels" />
     </picture>
   );
 };

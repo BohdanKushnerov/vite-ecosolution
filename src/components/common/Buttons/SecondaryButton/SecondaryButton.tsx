@@ -8,7 +8,11 @@ interface ISecondaryButton {
   followTo?: () => void;
 }
 
-const SecondaryButton: FC<ISecondaryButton> = ({ type, textContent, followTo }) => {
+const SecondaryButton: FC<ISecondaryButton> = ({
+  type,
+  textContent,
+  followTo,
+}) => {
   return (
     <Button type={type} onClick={followTo}>
       {textContent}
