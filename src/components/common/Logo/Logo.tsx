@@ -1,18 +1,15 @@
 import { FC } from "react";
 
-import sprite from "assets/sprite.svg";
+import { ILogoProps } from "interfaces/ILogoProps";
 import {
   LogoEcosolution,
   LogoGreen,
   LogoGreenergy,
   LogoWrap,
 } from "./Logo.styled";
+import sprite from "assets/sprite.svg";
 
-interface ILogo {
-  $scrolled?: boolean;
-}
-
-const Logo: FC<ILogo> = ({ $scrolled }) => {
+const Logo: FC<ILogoProps> = ({ $scrolled }) => {
   return (
     <LogoWrap href="/" target="blank" $scrolled={$scrolled ?? null}>
       <svg width={31} height={18}>

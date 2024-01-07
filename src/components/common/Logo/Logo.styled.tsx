@@ -1,12 +1,6 @@
-import { ReactNode } from "react";
 import styled, { IStyledComponent } from "styled-components";
 
-interface ILogoWrapProps {
-  href: string;
-  target: string;
-  $scrolled?: boolean | null;
-  children: ReactNode;
-}
+import { ILogoWrapProps } from "interfaces/styled/ILogoWrapProps";
 
 export const LogoWrap: IStyledComponent<
   "web",

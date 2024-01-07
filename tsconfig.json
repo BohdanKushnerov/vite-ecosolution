@@ -3,11 +3,13 @@
     "baseUrl": "./src",
     "paths": {
       "components/*": ["components/*"],
+      "sections/*": ["sections/*"],
       "common/*": ["components/common/*"],
       "assets/*": ["assets/*"],
       "hooks/*": ["hooks/*"],
       "utils/*": ["utils/*"],
       "constants/*": ["constants/*"],
+      "interfaces/*": ["interfaces/*"],
     },
     "target": "ES2020",
     "useDefineForClassFields": true,

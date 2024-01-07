@@ -1,14 +1,10 @@
 import { FC } from "react";
+
+import { ISecondaryButtonProps } from "interfaces/ISecondaryButtonProps";
 import { Button, IconWrap } from "./SecondaryButton.styled";
 import sprite from "assets/sprite.svg";
 
-interface ISecondaryButton {
-  type: "button" | "submit";
-  textContent: string;
-  followTo?: () => void;
-}
-
-const SecondaryButton: FC<ISecondaryButton> = ({
+const SecondaryButton: FC<ISecondaryButtonProps> = ({
   type,
   textContent,
   followTo,

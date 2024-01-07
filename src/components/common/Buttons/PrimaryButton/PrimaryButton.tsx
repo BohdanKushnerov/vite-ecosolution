@@ -1,14 +1,10 @@
 import { FC } from "react";
 
+import { IPrimaryButtonProps } from "interfaces/IPrimaryButtonProps";
 import { Button } from "./PrimaryButton.styled";
 import sprite from "assets/sprite.svg";
 
-interface IPrimaryButton {
-  textContent: string;
-  followTo: () => void;
-}
-
-const PrimaryButton: FC<IPrimaryButton> = ({ textContent, followTo }) => {
+const PrimaryButton: FC<IPrimaryButtonProps> = ({ textContent, followTo }) => {
   return (
     <Button onClick={followTo}>
       {textContent}

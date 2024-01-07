@@ -1,12 +1,8 @@
-import { FC, MouseEvent, ReactNode } from "react";
+import { FC, MouseEvent } from "react";
 
 import useCloseModal from "hooks/useCloseModal";
+import { IModalWindowProps } from "interfaces/IModalWindowProps";
 import { ModalWindowWrap } from "./ModalWindow.styled";
-
-interface IModalWindowProps {
-  handleToggleModal: () => void;
-  children: ReactNode;
-}
 
 const ModalWindow: FC<IModalWindowProps> = ({
   handleToggleModal,

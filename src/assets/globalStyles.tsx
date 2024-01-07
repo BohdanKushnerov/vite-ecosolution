@@ -51,7 +51,6 @@ const GlobalStyles = createGlobalStyle`
 
   body {
         margin: 0;
-        /* font-family: 'Fira Sans', 'Oswald', 'CA Saygon Text', 'FONTSPRING DEMO - All Round Gothic Thick', 'Inter', sans-serif; */
         font-family: 'Fira Sans',  sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
