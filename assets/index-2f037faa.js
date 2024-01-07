@@ -55,86 +55,10 @@ Error generating stack: `+s.message+`
   }
 
   @media (min-width: 1280px) {
-    /* @media (min-width: 1280px) { */
     width: 1280px;
-    /* width: 1280px; */
-    /* padding: 0 100px; */
     padding: 0 20px;
   }
-`,g0=({children:e})=>v.jsx(m0,{children:e}),me="/vite-ecosolution/assets/sprite-7a3f5b15.svg",v0=O.a`
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  cursor: pointer;
-
-  & > p {
-    color: ${({$scrolled:e})=>e&&"#97d28b"};
-  }
-
-  &:hover {
-    & > p {
-      color: #97d28b;
-    }
-  }
-`,y0=O.p`
-  color: #173d33;
-  font-family: "FONTSPRING DEMO - All Round Gothic Thick";
-  font-size: 33px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -1.32px;
-`,x0=O.p`
-  width: 60px;
-
-  color: #97d28b;
-  font-family: "CA Saygon Text";
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 9px;
-  letter-spacing: -0.4px;
-  text-transform: uppercase;
-`,w0=O.span`
-  color: "#173d33";
-  font-family: "CA Saygon Text";
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 9px;
-  letter-spacing: -0.4px;
-`,fh=({$scrolled:e})=>v.jsxs(v0,{href:"/",target:"blank",$scrolled:e??null,children:[v.jsx("svg",{width:31,height:18,children:v.jsx("use",{href:me+"#icon-logo"})}),v.jsx(y0,{children:"ecosolution"}),v.jsxs(x0,{children:[v.jsx(w0,{children:"green"}),"ergy for life"]})]}),S0=O.button`
-  display: inline-flex;
-  padding: 10px 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  width: 140px;
-
-  border-radius: 500px;
-  background: #97d28b;
-  border: none;
-  color: #173d33;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.64px;
-  cursor: pointer;
-
-  svg use {
-    fill: #173d33;
-    stroke: #173d33;
-  }
-
-  &:hover {
-    color: #97d28b;
-    background: #173d33;
-    svg use {
-      fill: #97d28b;
-    }
-  }
-`,xa=({textContent:e,followTo:t})=>v.jsxs(S0,{onClick:t,children:[e,v.jsx("svg",{width:14,height:14,children:v.jsx("use",{href:me+"#icon-group-31"})})]}),E0=e=>{G.useEffect(()=>{const t=n=>{n.code==="Escape"&&e()};return window.addEventListener("keydown",t),()=>{window.removeEventListener("keydown",t)}},[e])},k0=O.div`
+`,g0=({children:e})=>v.jsx(m0,{children:e}),v0=e=>{G.useEffect(()=>{const t=n=>{n.code==="Escape"&&e()};return window.addEventListener("keydown",t),()=>{window.removeEventListener("keydown",t)}},[e])},y0=O.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -147,7 +71,7 @@ Error generating stack: `+s.message+`
 
   background: rgba(23, 61, 51, 0.25);
   backdrop-filter: blur(2px);
-`,T0=({handleToggleModal:e,children:t})=>{E0(e);const n=r=>{r.target===r.currentTarget&&e()};return v.jsx(k0,{onClick:n,className:"absolute top-0 left-0 z-10 w-screen h-screen bg-transparent",children:t})},C0=O.button`
+`,x0=({handleToggleModal:e,children:t})=>{v0(e);const n=r=>{r.target===r.currentTarget&&e()};return v.jsx(y0,{onClick:n,className:"absolute top-0 left-0 z-10 w-screen h-screen bg-transparent",children:t})},w0=O.button`
   display: flex;
   flex-direction: column-reverse;
   justify-content: start;
@@ -186,18 +110,18 @@ Error generating stack: `+s.message+`
     flex-shrink: 0;
     background: #fff;
   }
-`,P0=O.span`
+`,S0=O.span`
   display: flex;
   align-items: center;
   gap: 4px;
-`,_0=O.span`
+`,E0=O.span`
   color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.8px;
-`,z0=({handleToggleModal:e})=>v.jsx(C0,{onClick:e,children:v.jsxs(P0,{children:[v.jsx("svg",{width:20,height:20,children:v.jsx("use",{href:me+"#icon-close-menu"})}),v.jsx(_0,{children:"close"})]})}),_i=e=>{const t=document.getElementById(e);t&&window.scrollTo({top:t.offsetTop-76,behavior:"smooth"})},I0=O.button`
+`,me="/vite-ecosolution/assets/sprite-7a3f5b15.svg",k0=({handleToggleModal:e})=>v.jsx(w0,{onClick:e,children:v.jsxs(S0,{children:[v.jsx("svg",{width:20,height:20,children:v.jsx("use",{href:me+"#icon-close-menu"})}),v.jsx(E0,{children:"close"})]})}),_i=e=>{const t=document.getElementById(e);t&&window.scrollTo({top:t.offsetTop-76,behavior:"smooth"})},T0=O.button`
   display: flex;
   align-items: center;
   gap: 4px;
@@ -223,19 +147,19 @@ Error generating stack: `+s.message+`
       stroke: #97D28B;
     }
   }
-`,O0=({label:e,sectionName:t,handleToggleModal:n})=>{const r=()=>{_i(t),n()};return v.jsxs(I0,{onClick:r,children:[e,v.jsx("svg",{width:16,height:16,children:v.jsx("use",{xlinkHref:me+"#icon-arrow-right-up"})})]})},M0=O.div`
+`,C0=({label:e,sectionName:t,handleToggleModal:n})=>{const r=()=>{_i(t),n()};return v.jsxs(T0,{onClick:r,children:[e,v.jsx("svg",{width:16,height:16,children:v.jsx("use",{xlinkHref:me+"#icon-arrow-right-up"})})]})},P0=O.div`
   display: flex;
   gap: ${({$space:e})=>`${e}px`};
 `,rd=O.svg`
   cursor: pointer;
-  stroke: ${({$colorplan:e})=>e==="primary"?"#173d33":"#ffffff"};
-  fill: ${({$colorplan:e})=>e==="primary"?"#173d33":"#ffffff"};
+  stroke: ${({$colorPlan:e})=>e==="primary"?"#173d33":"#ffffff"};
+  fill: ${({$colorPlan:e})=>e==="primary"?"#173d33":"#ffffff"};
 
   &:hover {
     fill: #97d28b;
     stroke: #97d28b;
   }
-`,Tu=({colorplan:e,space:t})=>v.jsxs(M0,{$space:t,children:[v.jsx("a",{href:"https://www.facebook.com/",target:"blank",children:v.jsx(rd,{width:24,height:24,$colorplan:e,children:v.jsx("use",{href:me+"#icon-facebook"})})}),v.jsx("a",{href:"https://www.instagram.com/",target:"blank",children:v.jsx(rd,{width:24,height:24,$colorplan:e,children:v.jsx("use",{href:me+"#icon-instagram"})})})]}),Ue={MAIN:"main",ABOUT:"about",CASES:"cases",QUESTIONS:"questions",CONTACT:"contact"},L0=[{id:1,label:"Main",sectionName:Ue.MAIN},{id:2,label:"About",sectionName:Ue.ABOUT},{id:3,label:"Cases",sectionName:Ue.CASES},{id:4,label:"FAQ",sectionName:Ue.QUESTIONS},{id:5,label:"Contact",sectionName:Ue.CONTACT}],j0=O.div`
+`,Tu=({colorPlan:e,space:t})=>v.jsxs(P0,{$space:t,children:[v.jsx("a",{href:"https://www.facebook.com/",target:"blank",children:v.jsx(rd,{width:24,height:24,$colorPlan:e,children:v.jsx("use",{href:me+"#icon-facebook"})})}),v.jsx("a",{href:"https://www.instagram.com/",target:"blank",children:v.jsx(rd,{width:24,height:24,$colorPlan:e,children:v.jsx("use",{href:me+"#icon-instagram"})})})]}),Ue={MAIN:"main",ABOUT:"about",CASES:"cases",QUESTIONS:"questions",CONTACT:"contact"},_0=[{id:1,label:"Main",sectionName:Ue.MAIN},{id:2,label:"About",sectionName:Ue.ABOUT},{id:3,label:"Cases",sectionName:Ue.CASES},{id:4,label:"FAQ",sectionName:Ue.QUESTIONS},{id:5,label:"Contact",sectionName:Ue.CONTACT}],z0=O.div`
   position: absolute;
   top: 36px;
   display: flex;
@@ -261,16 +185,16 @@ Error generating stack: `+s.message+`
     right: 100px;
     height: calc(100% - 60px);
   }
-`,A0=O.div`
+`,I0=O.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin-top: 24px;
-`,N0=O.div`
+`,O0=O.div`
   display: flex;
   flex: 1;
   align-items: flex-end;
-`,b0=({handleToggleModal:e})=>v.jsx(T0,{handleToggleModal:e,children:v.jsxs(j0,{children:[v.jsx(z0,{handleToggleModal:e}),v.jsx(A0,{children:L0.map(t=>v.jsx(O0,{label:t.label,sectionName:t.sectionName,handleToggleModal:e},t.id))}),v.jsx(N0,{children:v.jsx(Tu,{colorplan:"secondary",space:8})})]})}),F0=O.button`
+`,M0=({handleToggleModal:e})=>v.jsx(x0,{handleToggleModal:e,children:v.jsxs(z0,{children:[v.jsx(k0,{handleToggleModal:e}),v.jsx(I0,{children:_0.map(t=>v.jsx(C0,{label:t.label,sectionName:t.sectionName,handleToggleModal:e},t.id))}),v.jsx(O0,{children:v.jsx(Tu,{colorPlan:"secondary",space:8})})]})}),L0=O.button`
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -286,7 +210,80 @@ Error generating stack: `+s.message+`
   &:hover {
     background: #97d28b;
   }
-`,D0=()=>{const[e,t]=G.useState(!1),n=()=>{t(r=>!r)};return v.jsxs("div",{children:[v.jsx(F0,{onClick:n,children:v.jsx("svg",{width:16,height:16,children:v.jsx("use",{href:me+"#icon-menu",stroke:"#292D32"})})}),e&&v.jsx(b0,{handleToggleModal:n})]})},ph=(e,t)=>{const n=G.useCallback(()=>window.innerWidth<e?"mobile":window.innerWidth<t?"tablet":"desktop",[t,e]),[r,i]=G.useState(()=>n());return G.useEffect(()=>{const s=()=>i(n());return window.addEventListener("resize",s),()=>window.removeEventListener("resize",s)},[n]),r},R0=O.header`
+`,j0=()=>{const[e,t]=G.useState(!1),n=()=>{t(r=>!r)};return v.jsxs("div",{children:[v.jsx(L0,{onClick:n,children:v.jsx("svg",{width:16,height:16,children:v.jsx("use",{href:me+"#icon-menu",stroke:"#292D32"})})}),e&&v.jsx(M0,{handleToggleModal:n})]})},A0=O.a`
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+
+  & > p {
+    color: ${({$scrolled:e})=>e&&"#97d28b"};
+  }
+
+  &:hover {
+    & > p {
+      color: #97d28b;
+    }
+  }
+`,N0=O.p`
+  color: #173d33;
+  font-family: "FONTSPRING DEMO - All Round Gothic Thick";
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.32px;
+`,b0=O.p`
+  width: 60px;
+
+  color: #97d28b;
+  font-family: "CA Saygon Text";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 9px;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+`,F0=O.span`
+  color: "#173d33";
+  font-family: "CA Saygon Text";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 9px;
+  letter-spacing: -0.4px;
+`,fh=({$scrolled:e})=>v.jsxs(A0,{href:"/",target:"blank",$scrolled:e??null,children:[v.jsx("svg",{width:31,height:18,children:v.jsx("use",{href:me+"#icon-logo"})}),v.jsx(N0,{children:"ecosolution"}),v.jsxs(b0,{children:[v.jsx(F0,{children:"green"}),"ergy for life"]})]}),D0=O.button`
+  display: inline-flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 140px;
+
+  border-radius: 500px;
+  background: #97d28b;
+  border: none;
+  color: #173d33;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  cursor: pointer;
+
+  svg use {
+    fill: #173d33;
+    stroke: #173d33;
+  }
+
+  &:hover {
+    color: #97d28b;
+    background: #173d33;
+    svg use {
+      fill: #97d28b;
+    }
+  }
+`,xa=({textContent:e,followTo:t})=>v.jsxs(D0,{onClick:t,children:[e,v.jsx("svg",{width:14,height:14,children:v.jsx("use",{href:me+"#icon-group-31"})})]}),ph=(e,t)=>{const n=G.useCallback(()=>window.innerWidth<e?"mobile":window.innerWidth<t?"tablet":"desktop",[t,e]),[r,i]=G.useState(()=>n());return G.useEffect(()=>{const s=()=>i(n());return window.addEventListener("resize",s),()=>window.removeEventListener("resize",s)},[n]),r},R0=()=>{const[e,t]=G.useState(!1);return G.useEffect(()=>{const n=()=>{const r=window.scrollY>0;t(r)};return window.addEventListener("scroll",n),()=>{window.removeEventListener("scroll",n)}},[]),e},$0=O.header`
   position: fixed;
   top: 0;
   left: 50%;
@@ -314,15 +311,22 @@ Error generating stack: `+s.message+`
     width: 1240px;
     padding-top: 24px;
   }
-`,$0=O.div`
+`,V0=O.div`
   @media (min-width: 768px) {
     display: flex;
     gap: 12px;
     margin-left: auto;
   }
-`,V0=()=>{const[e,t]=G.useState(!1);return G.useEffect(()=>{const n=()=>{const r=window.scrollY>0;t(r)};return window.addEventListener("scroll",n),()=>{window.removeEventListener("scroll",n)}},[]),e},B0=()=>{const e=ph(768,1440),t=V0(),n=()=>{_i(Ue.CONTACT)};return v.jsxs(R0,{children:[v.jsx(fh,{$scrolled:t}),v.jsxs($0,{children:[v.jsx(D0,{}),e!=="mobile"&&v.jsx(xa,{textContent:"Get in touch",followTo:n})]})]})},W0=O.button`
+`,B0=()=>{const e=ph(768,1440),t=R0(),n=()=>{_i(Ue.CONTACT)};return v.jsxs($0,{children:[v.jsx(fh,{$scrolled:t}),v.jsxs(V0,{children:[v.jsx(j0,{}),e!=="mobile"&&v.jsx(xa,{textContent:"Get in touch",followTo:n})]})]})},hh=O.picture`
+  @media (max-width: 767px) {
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+`,W0="/vite-ecosolution/assets/turbine-mob-0dfea615.webp",U0="/vite-ecosolution/assets/turbine-2xmob-40a58984.webp",H0="/vite-ecosolution/assets/turbine-tabl-dbe8aade.webp",G0="/vite-ecosolution/assets/turbine-2xtabl-344a54f0.webp",Q0="/vite-ecosolution/assets/turbine-desk-43d5d924.webp",Y0="/vite-ecosolution/assets/turbine-2xdesk-c8e6de3f.webp",X0=()=>v.jsxs(hh,{children:[v.jsx("source",{srcSet:`${W0} 1x, ${U0} 2x`,media:"(max-width: 767px)"}),v.jsx("source",{srcSet:`${H0} 1x, ${G0} 2x`,media:"(min-width: 768px) and (max-width: 1279px)"}),v.jsx("source",{srcSet:`${Q0} 1x, ${Y0} 2x`,media:"(min-width: 1280px)"}),v.jsx("img",{src:"/src/assets/AboutSectionImages/turbine-desk.webp",alt:"turbine"})]}),K0=O.button`
   display: flex;
-  /* width: 143px; */
   height: 39px;
   padding: 4px 4px 4px 16px;
   justify-content: center;
@@ -355,7 +359,7 @@ Error generating stack: `+s.message+`
   @media (min-width: 768px) {
     margin: 0;
   }
-`,U0=O.span`
+`,q0=O.span`
   display: flex;
   padding: 8px;
   justify-content: center;
@@ -364,7 +368,7 @@ Error generating stack: `+s.message+`
 
   border-radius: 100px;
   background: #97d28b;
-`,hh=({type:e,textContent:t,followTo:n})=>v.jsxs(W0,{type:e,onClick:n,children:[t,v.jsx(U0,{children:v.jsx("svg",{width:14,height:14,children:v.jsx("use",{href:me+"#icon-arrow-right"})})})]}),H0=O.section`
+`,mh=({type:e,textContent:t,followTo:n})=>v.jsxs(K0,{type:e,onClick:n,children:[t,v.jsx(q0,{children:v.jsx("svg",{width:14,height:14,children:v.jsx("use",{href:me+"#icon-arrow-right"})})})]}),Z0=O.section`
   margin-top: 222px;
 
   @media (min-width: 768px) {
@@ -374,7 +378,7 @@ Error generating stack: `+s.message+`
   @media (min-width: 1280px) {
     margin-top: 264px;
   }
-`,G0=O.div`
+`,J0=O.div`
   display: flex;
   flex-direction: column;
   padding-bottom: 24px;
@@ -391,7 +395,7 @@ Error generating stack: `+s.message+`
     gap: 296px;
     padding-bottom: 28px;
   }
-`,Q0=O.h1`
+`,ey=O.h1`
   color: #173d33;
   font-family: "Oswald";
   font-size: 36px;
@@ -418,7 +422,7 @@ Error generating stack: `+s.message+`
     font-size: 64px;
     line-height: 64px;
   }
-`,Y0=O.div`
+`,ty=O.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -430,7 +434,7 @@ Error generating stack: `+s.message+`
   @media (min-width: 1280px) {
     gap: 20px;
   }
-`,X0=O.p`
+`,ny=O.p`
   margin-top: 24px;
 
   color: #173d33;
@@ -451,7 +455,7 @@ Error generating stack: `+s.message+`
   @media (min-width: 1280px) {
     width: 363px;
   }
-`,K0=O.div`
+`,ry=O.div`
   display: flex;
   gap: 8px;
   justify-content: center;
@@ -463,7 +467,7 @@ Error generating stack: `+s.message+`
     margin-top: 16px;
     margin-bottom: 40px;
   }
-`,q0=O.address`
+`,iy=O.address`
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -472,7 +476,7 @@ Error generating stack: `+s.message+`
     flex-direction: row;
     gap: 0;
   }
-`,Z0=O.p`
+`,sy=O.p`
   color: #173d33;
   font-size: 16px;
   font-style: normal;
@@ -484,7 +488,7 @@ Error generating stack: `+s.message+`
   @media (min-width: 768px) {
     text-align: start;
   }
-`,J0=O.p`
+`,oy=O.p`
   color: #173d33;
   font-size: 16px;
   font-style: normal;
@@ -502,7 +506,7 @@ Error generating stack: `+s.message+`
   @media (min-width: 1280px) {
     margin-left: 492px;
   }
-`,ey=O.p`
+`,ly=O.p`
   display: none;
 
   color: #173d33;
@@ -516,15 +520,7 @@ Error generating stack: `+s.message+`
     display: block;
     margin-left: auto;
   }
-`,ty="/vite-ecosolution/assets/turbine-mob-0dfea615.webp",ny="/vite-ecosolution/assets/turbine-2xmob-40a58984.webp",ry="/vite-ecosolution/assets/turbine-tabl-dbe8aade.webp",iy="/vite-ecosolution/assets/turbine-2xtabl-344a54f0.webp",sy="/vite-ecosolution/assets/turbine-desk-43d5d924.webp",oy="/vite-ecosolution/assets/turbine-2xdesk-c8e6de3f.webp",mh=O.picture`
-  @media (max-width: 767px) {
-    img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
-  }
-`,ly=()=>v.jsxs(mh,{children:[v.jsx("source",{srcSet:`${ty} 1x, ${ny} 2x`,media:"(max-width: 767px)"}),v.jsx("source",{srcSet:`${ry} 1x, ${iy} 2x`,media:"(min-width: 768px) and (max-width: 1279px)"}),v.jsx("source",{srcSet:`${sy} 1x, ${oy} 2x`,media:"(min-width: 1280px)"}),v.jsx("img",{src:"/src/assets/AboutSectionImages/turbine-desk.webp",alt:"turbine"})]}),ay=()=>{const e=()=>{_i(Ue.CASES)};return v.jsxs(H0,{id:Ue.MAIN,children:[v.jsxs(G0,{children:[v.jsx(Q0,{children:"renewable energy for any task"}),v.jsxs(Y0,{children:[v.jsx(X0,{children:"Development and implementation of renewable non-polluting energy sources, generating power generation using energy wind, sun, water, biomass"}),v.jsx(hh,{type:"button",textContent:"Learn More",followTo:e})]})]}),v.jsxs(K0,{children:[v.jsxs(q0,{children:[v.jsx(Z0,{children:"79005, Ukraine, Lvivstreet. Shota Rustaveli, 7"}),v.jsx(J0,{children:"office@ecosolution.com"})]}),v.jsx(ey,{children:"ecosolution © 2023"})]}),v.jsx(ly,{})]})},uy=O.section`
+`,ay=()=>{const e=()=>{_i(Ue.CASES)};return v.jsxs(Z0,{id:Ue.MAIN,children:[v.jsxs(J0,{children:[v.jsx(ey,{children:"renewable energy for any task"}),v.jsxs(ty,{children:[v.jsx(ny,{children:"Development and implementation of renewable non-polluting energy sources, generating power generation using energy wind, sun, water, biomass"}),v.jsx("div",{children:v.jsx(mh,{type:"button",textContent:"Learn More",followTo:e})})]})]}),v.jsxs(ry,{children:[v.jsxs(iy,{children:[v.jsx(sy,{children:"79005, Ukraine, Lvivstreet. Shota Rustaveli, 7"}),v.jsx(oy,{children:"office@ecosolution.com"})]}),v.jsx(ly,{children:"ecosolution © 2023"})]}),v.jsx(X0,{})]})},uy="/vite-ecosolution/assets/wind-farms-tabl-f682e3a7.webp",cy="/vite-ecosolution/assets/wind-farms-2xtabl-2a8c5771.webp",id="/vite-ecosolution/assets/wind-farms-desk-c8152f55.webp",dy="/vite-ecosolution/assets/wind-farms-2xdesk-837e6b69.webp",fy=()=>v.jsxs("picture",{children:[v.jsx("source",{srcSet:`${uy} 1x, ${cy} 2x`,media:"(min-width: 768px) and (max-width: 1279px)"}),v.jsx("source",{srcSet:`${id} 1x, ${dy} 2x`,media:"(min-width: 1280px)"}),v.jsx("img",{src:`${id}`,alt:"wind-farms"})]}),py="/vite-ecosolution/assets/solar-panels-tabl-ef4daad0.webp",hy="/vite-ecosolution/assets/solar-panels-2xtabl-6d126731.webp",sd="/vite-ecosolution/assets/solar-panels-desk-40346a35.webp",my="/vite-ecosolution/assets/solar-panels-2xdesk-99c6706c.webp",gy=()=>v.jsxs("picture",{children:[v.jsx("source",{srcSet:`${py} 1x, ${hy} 2x`,media:"(min-width: 768px) and (max-width: 1279px)"}),v.jsx("source",{srcSet:`${sd} 1x, ${my} 2x`,media:"(min-width: 1280px)"}),v.jsx("img",{src:`${sd}`,alt:"solar-panels"})]}),vy=O.section`
   display: flex;
   flex-direction: column;
   gap: 36px;
@@ -539,7 +535,7 @@ Error generating stack: `+s.message+`
     gap: 122px;
     margin-top: 120px;
   }
-`,cy=O.div`
+`,yy=O.div`
   @media (min-width: 768px) {
     display: flex;
     gap: 82px;
@@ -547,7 +543,7 @@ Error generating stack: `+s.message+`
   @media (min-width: 1280px) {
     gap: 254px;
   }
-`,dy=O.h2`
+`,xy=O.h2`
   color: #173d33;
   font-family: "Oswald";
   font-size: 28px;
@@ -569,7 +565,7 @@ Error generating stack: `+s.message+`
     font-size: 48px;
     line-height: 48px;
   }
-`,fy=O.p`
+`,wy=O.p`
   margin-top: 24px;
 
   color: #173d33;
@@ -593,28 +589,15 @@ Error generating stack: `+s.message+`
     width: 620px;
     padding-left: 161px;
   }
-`,py=O.ul`
+`,Sy=O.ul`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
-
-  /* @media (max-width: 767px) {
-    width: 320px;
-    justify-self: center;
-    align-self: center;
-  } */
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(4, 1fr);
   }
 `,Xi=O.li`
-  /* width: 148px; */
-  @media (max-width: 767px) {
-    /* width: 320px;
-    justify-self: center;
-    align-self: center; */
-  }
-  /* height: 197px; */
   flex-shrink: 0;
   padding: 12px;
 
@@ -629,7 +612,7 @@ Error generating stack: `+s.message+`
     height: 339px;
     padding: 48px 24px;
   }
-`,id=O.li`
+`,od=O.li`
   display: none;
   @media (min-width: 768px) {
     display: block;
@@ -690,7 +673,7 @@ Error generating stack: `+s.message+`
   @media (min-width: 1280px) {
     font-size: 16px;
   }
-`,hy="/vite-ecosolution/assets/wind-farms-tabl-f682e3a7.webp",my="/vite-ecosolution/assets/wind-farms-2xtabl-2a8c5771.webp",sd="/vite-ecosolution/assets/wind-farms-desk-c8152f55.webp",gy="/vite-ecosolution/assets/wind-farms-2xdesk-837e6b69.webp",vy=()=>v.jsxs("picture",{children:[v.jsx("source",{srcSet:`${hy} 1x, ${my} 2x`,media:"(min-width: 768px) and (max-width: 1279px)"}),v.jsx("source",{srcSet:`${sd} 1x, ${gy} 2x`,media:"(min-width: 1280px)"}),v.jsx("img",{src:`${sd}`,alt:"wind-farms"})]}),yy="/vite-ecosolution/assets/solar-panels-tabl-ef4daad0.webp",xy="/vite-ecosolution/assets/solar-panels-2xtabl-6d126731.webp",od="/vite-ecosolution/assets/solar-panels-desk-40346a35.webp",wy="/vite-ecosolution/assets/solar-panels-2xdesk-99c6706c.webp",Sy=()=>v.jsxs("picture",{children:[v.jsx("source",{srcSet:`${yy} 1x, ${xy} 2x`,media:"(min-width: 768px) and (max-width: 1279px)"}),v.jsx("source",{srcSet:`${od} 1x, ${wy} 2x`,media:"(min-width: 1280px)"}),v.jsx("img",{src:`${od}`,alt:"solar-panels"})]}),Ey=()=>v.jsxs(uy,{id:Ue.ABOUT,children:[v.jsxs(cy,{children:[v.jsx(dy,{children:"Main values of our company"}),v.jsx(fy,{children:"EcoSolution envisions a world where sustainable energy solutions power a brighter and cleaner future for all. We aspire to be at the forefront of the global shift towards renewable energy, leading the way in innovative technologies that harness the power of nature to meet the world's energy needs."})]}),v.jsxs(py,{children:[v.jsxs(Xi,{children:[v.jsxs(Ki,{children:[v.jsx("svg",{width:16,height:16,children:v.jsx("use",{href:me+"#icon-maximize-circle",fill:"transparent",stroke:"#173D33"})}),v.jsx(qi,{children:"Openness"})]}),v.jsx(Zi,{children:"to the world, people, new ideas and projects"})]}),v.jsxs(Xi,{children:[v.jsxs(Ki,{children:[v.jsx("svg",{width:16,height:16,children:v.jsx("use",{href:me+"#icon-global-edit",fill:"transparent",stroke:"#173D33"})}),v.jsx(qi,{children:"Responsibility"})]}),v.jsx(Zi,{children:"we are aware that the results of our work have an impact on our lives and the lives of future generations"})]}),v.jsx(id,{children:v.jsx(vy,{})}),v.jsx(id,{children:v.jsx(Sy,{})}),v.jsxs(Xi,{children:[v.jsxs(Ki,{children:[v.jsx("svg",{width:16,height:16,children:v.jsx("use",{href:me+"#icon-cpu-charge",fill:"transparent",stroke:"#173D33"})}),v.jsx(qi,{children:"Innovation"})]}),v.jsx(Zi,{children:"we use the latest technology to implement non-standard solutions"})]}),v.jsxs(Xi,{children:[v.jsxs(Ki,{children:[v.jsx("svg",{width:16,height:16,children:v.jsx("use",{href:me+"#icon-ranking",fill:"transparent",stroke:"#173D33"})}),v.jsx(qi,{children:"Quality"})]}),v.jsx(Zi,{children:"we do not strive to be the first among others, but we want to be the best in our business"})]})]})]}),ky=()=>{const[e,t]=G.useState(1134147814),n=G.useRef(null);return G.useEffect(()=>(n.current=setInterval(()=>{t(r=>r+=1)},1e3),()=>{n.current&&clearInterval(n.current)}),[]),e},Ty=e=>e.toString().replace(/\B(?=(\d{3})+(?!\d))/g,"."),Cy=O.section`
+`,Ey=()=>v.jsxs(vy,{id:Ue.ABOUT,children:[v.jsxs(yy,{children:[v.jsx(xy,{children:"Main values of our company"}),v.jsx(wy,{children:"EcoSolution envisions a world where sustainable energy solutions power a brighter and cleaner future for all. We aspire to be at the forefront of the global shift towards renewable energy, leading the way in innovative technologies that harness the power of nature to meet the world's energy needs."})]}),v.jsxs(Sy,{children:[v.jsxs(Xi,{children:[v.jsxs(Ki,{children:[v.jsx("svg",{width:16,height:16,children:v.jsx("use",{href:me+"#icon-maximize-circle",fill:"transparent",stroke:"#173D33"})}),v.jsx(qi,{children:"Openness"})]}),v.jsx(Zi,{children:"to the world, people, new ideas and projects"})]}),v.jsxs(Xi,{children:[v.jsxs(Ki,{children:[v.jsx("svg",{width:16,height:16,children:v.jsx("use",{href:me+"#icon-global-edit",fill:"transparent",stroke:"#173D33"})}),v.jsx(qi,{children:"Responsibility"})]}),v.jsx(Zi,{children:"we are aware that the results of our work have an impact on our lives and the lives of future generations"})]}),v.jsx(od,{children:v.jsx(fy,{})}),v.jsx(od,{children:v.jsx(gy,{})}),v.jsxs(Xi,{children:[v.jsxs(Ki,{children:[v.jsx("svg",{width:16,height:16,children:v.jsx("use",{href:me+"#icon-cpu-charge",fill:"transparent",stroke:"#173D33"})}),v.jsx(qi,{children:"Innovation"})]}),v.jsx(Zi,{children:"we use the latest technology to implement non-standard solutions"})]}),v.jsxs(Xi,{children:[v.jsxs(Ki,{children:[v.jsx("svg",{width:16,height:16,children:v.jsx("use",{href:me+"#icon-ranking",fill:"transparent",stroke:"#173D33"})}),v.jsx(qi,{children:"Quality"})]}),v.jsx(Zi,{children:"we do not strive to be the first among others, but we want to be the best in our business"})]})]})]}),ky=()=>{const[e,t]=G.useState(1134147814),n=G.useRef(null);return G.useEffect(()=>(n.current=setInterval(()=>{t(r=>r+=1)},1e3),()=>{n.current&&clearInterval(n.current)}),[]),e},Ty=e=>e.toString().replace(/\B(?=(\d{3})+(?!\d))/g,"."),Cy=O.section`
   margin-top: 36px;
 
   @media (min-width: 768px) {
@@ -801,7 +784,7 @@ Error generating stack: `+s.message+`
     width: 596px;
     height: 296px;
   }
-`,ux=({imageSrc:e,imageSrc2x:t,alt:n})=>v.jsxs(mh,{children:[v.jsx("source",{srcSet:`${e} 1x, ${t} 2x`}),v.jsx(ax,{src:e,alt:n})]}),cx="/vite-ecosolution/assets/lviv-region-5b359b82.webp",dx="/vite-ecosolution/assets/lviv-region-2x-96295f3b.webp",fx="/vite-ecosolution/assets/zhytomyr-city-3f6eae4f.webp",px="/vite-ecosolution/assets/zhytomyr-city-2x-a0538cd1.webp",hx="/vite-ecosolution/assets/rivne-city-323c680c.webp",mx="/vite-ecosolution/assets/rivne-city-2x-a1d6bb37.webp",gx="/vite-ecosolution/assets/kherson-city-ef69295b.webp",vx="/vite-ecosolution/assets/kherson-city-2x-990e6e5b.webp",yx="/vite-ecosolution/assets/zaporizhia-city-805bcd2f.webp",xx="/vite-ecosolution/assets/zaporizhia-city-2x-71a22a97.webp",wx=[{key:1,imageSrc:cx,imageSrc2x:dx,title:"Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”",description:"Wind Power for auto field irrigation",date:"July 2023"},{key:2,imageSrc:fx,imageSrc2x:px,title:"Zhytomyr city Private Enterprise “Bosch”",description:"Solar Panels for industrial use",date:"November 2023"},{key:3,imageSrc:hx,imageSrc2x:mx,title:"Rivne city Private Enterprise “Biotech”",description:"Thermal modules",date:"October 2023"},{key:4,imageSrc:gx,imageSrc2x:vx,title:"Kherson city Private Enterprise “HealthyFarm”",description:"Wind power",date:"September 2021"},{key:5,imageSrc:yx,imageSrc2x:xx,title:"Zaporizhia city Private Enterprise “Biotech”",description:"Mini nuclear stations",date:"May 2021"}],Sx=O.section`
+`,ux=({imageSrc:e,imageSrc2x:t,alt:n})=>v.jsxs(hh,{children:[v.jsx("source",{srcSet:`${e} 1x, ${t} 2x`}),v.jsx(ax,{src:e,alt:n})]}),cx="/vite-ecosolution/assets/lviv-region-5b359b82.webp",dx="/vite-ecosolution/assets/lviv-region-2x-96295f3b.webp",fx="/vite-ecosolution/assets/zhytomyr-city-3f6eae4f.webp",px="/vite-ecosolution/assets/zhytomyr-city-2x-a0538cd1.webp",hx="/vite-ecosolution/assets/rivne-city-323c680c.webp",mx="/vite-ecosolution/assets/rivne-city-2x-a1d6bb37.webp",gx="/vite-ecosolution/assets/kherson-city-ef69295b.webp",vx="/vite-ecosolution/assets/kherson-city-2x-990e6e5b.webp",yx="/vite-ecosolution/assets/zaporizhia-city-805bcd2f.webp",xx="/vite-ecosolution/assets/zaporizhia-city-2x-71a22a97.webp",wx=[{key:1,imageSrc:cx,imageSrc2x:dx,title:"Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”",description:"Wind Power for auto field irrigation",date:"July 2023"},{key:2,imageSrc:fx,imageSrc2x:px,title:"Zhytomyr city Private Enterprise “Bosch”",description:"Solar Panels for industrial use",date:"November 2023"},{key:3,imageSrc:hx,imageSrc2x:mx,title:"Rivne city Private Enterprise “Biotech”",description:"Thermal modules",date:"October 2023"},{key:4,imageSrc:gx,imageSrc2x:vx,title:"Kherson city Private Enterprise “HealthyFarm”",description:"Wind power",date:"September 2021"},{key:5,imageSrc:yx,imageSrc2x:xx,title:"Zaporizhia city Private Enterprise “Biotech”",description:"Mini nuclear stations",date:"May 2021"}],Sx=O.section`
   margin-top: 36px;
 
   @media (min-width: 768px) {
@@ -1293,7 +1276,7 @@ Error generating stack: `+s.message+`
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.48px;
-`,zw=()=>{const{register:e,handleSubmit:t,reset:n,formState:{isSubmitSuccessful:r,errors:i}}=mw({mode:"onChange",defaultValues:{fullName:"",email:"",phone:"",message:""}});G.useEffect(()=>{r&&n()},[r,n]);const s=o=>{console.log("data sended",o)};return v.jsx(v.Fragment,{children:v.jsxs(Sw,{action:"/path",onSubmit:t(s),children:[ww.map(o=>v.jsxs(Ew,{htmlFor:o.name,$isError:i[o.name],children:[v.jsxs(Cd,{children:["* ",o.label,":"]}),v.jsx(kw,{...e(o.name,{pattern:o.pattern,required:o.requiredMessage}),type:o.type,id:o.name,placeholder:o.placeholder}),v.jsx(gw,{errors:i,name:o.name,render:({message:a})=>v.jsx(_w,{children:a})})]},o.name)),v.jsxs(Tw,{htmlFor:"message",children:[v.jsx(Cd,{children:"Message:"}),v.jsx(Cw,{...e("message"),id:"message",name:"message",cols:30,rows:10,placeholder:"Your message"})]}),v.jsx(Pw,{children:v.jsx(hh,{type:"submit",textContent:"Send"})})]})})},Iw=O.section`
+`,zw=()=>{const{register:e,handleSubmit:t,setValue:n,getValues:r,reset:i,formState:{isSubmitSuccessful:s,errors:o}}=mw({mode:"onChange",defaultValues:{fullName:"",email:"",phone:"",message:""}});G.useEffect(()=>{s&&(localStorage.removeItem("contactFormValues"),i())},[s,i]),G.useEffect(()=>{const u=JSON.parse(localStorage.getItem("contactFormValues")||"{}");Object.keys(u).forEach(c=>{n(c,u[c])})},[n]);const a=()=>{localStorage.setItem("contactFormValues",JSON.stringify(r()))},l=u=>{console.log("data sended",u)};return v.jsx(v.Fragment,{children:v.jsxs(Sw,{action:"/path",onSubmit:t(l),onChange:a,children:[ww.map(u=>v.jsxs(Ew,{htmlFor:u.name,$isError:o[u.name],children:[v.jsxs(Cd,{children:["* ",u.label,":"]}),v.jsx(kw,{...e(u.name,{pattern:u.pattern,required:u.requiredMessage}),type:u.type,id:u.name,placeholder:u.placeholder}),v.jsx(gw,{errors:o,name:u.name,render:({message:c})=>v.jsx(_w,{children:c})})]},u.name)),v.jsxs(Tw,{htmlFor:"message",children:[v.jsx(Cd,{children:"Message:"}),v.jsx(Cw,{...e("message"),id:"message",name:"message",cols:30,rows:10,placeholder:"Your message"})]}),v.jsx(Pw,{children:v.jsx(mh,{type:"submit",textContent:"Send"})})]})})},Iw=O.section`
   margin-top: 36px;
 
   @media (min-width: 768px) {
@@ -1309,13 +1292,18 @@ Error generating stack: `+s.message+`
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 100% */
+  line-height: 28px;
   text-transform: uppercase;
   text-align: center;
 
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
   @media (min-width: 1280px) {
     font-size: 48px;
-    line-height: 48px; /* 100% */
+    line-height: 48px;
   }
 `,Mw=O.div`
   margin-top: 24px;
@@ -1393,7 +1381,7 @@ Error generating stack: `+s.message+`
     }
     color: #97d28b;
   }
-`,Aw=()=>v.jsxs(Iw,{id:Ue.CONTACT,children:[v.jsx(Ow,{children:"Contact Us"}),v.jsxs(Mw,{children:[v.jsxs(Lw,{children:[v.jsxs(ts,{children:[v.jsx(ns,{children:"Phone:"}),v.jsxs(jw,{children:[v.jsxs(rs,{href:"tel:+38(093)1234567",target:"blank",children:[v.jsx("svg",{width:24,height:24,stroke:"#173d33",fill:"transparent",children:v.jsx("use",{href:me+"#icon-call",stroke:"#173d33",fill:"#FFFFFF"})}),"38 (098) 12 34 567"]}),v.jsxs(rs,{href:"tel:+38(093)1234567",target:"blank",children:[v.jsx("svg",{width:24,height:24,stroke:"#173d33",fill:"transparent",children:v.jsx("use",{href:me+"#icon-call"})}),"38 (093) 12 34 567"]})]})]}),v.jsxs(ts,{children:[v.jsx(ns,{children:"E-mail:"}),v.jsxs(rs,{href:"mailto:office@ecosolution.com",target:"blank",children:[v.jsx("svg",{width:24,height:24,stroke:"#173d33",fill:"transparent",children:v.jsx("use",{href:me+"#icon-sms"})}),"office@ecosolution.com"]})]}),v.jsxs(ts,{children:[v.jsx(ns,{children:"Address:"}),v.jsxs(rs,{href:"https://www.google.com.ua/maps/search/79005,+Ukraine,+Lvivstreet.+Shota+Rustaveli,+7/@49.8313557,24.0323843,17z/data=!3m1!4b1?entry=ttu",target:"blank",children:[v.jsx("svg",{width:24,height:24,stroke:"#173d33",fill:"transparent",children:v.jsx("use",{href:me+"#icon-map"})}),"79005, Ukraine, Lvivstreet. Shota Rustaveli, 7"]})]}),v.jsxs(ts,{children:[v.jsx(ns,{children:"Social Networks:"}),v.jsx(Tu,{colorplan:"primary",space:32})]})]}),v.jsx(zw,{})]})]}),Nw=O.footer`
+`,Aw=()=>v.jsxs(Iw,{id:Ue.CONTACT,children:[v.jsx(Ow,{children:"Contact Us"}),v.jsxs(Mw,{children:[v.jsxs(Lw,{children:[v.jsxs(ts,{children:[v.jsx(ns,{children:"Phone:"}),v.jsxs(jw,{children:[v.jsxs(rs,{href:"tel:+38(093)1234567",target:"blank",children:[v.jsx("svg",{width:24,height:24,stroke:"#173d33",fill:"transparent",children:v.jsx("use",{href:me+"#icon-call",stroke:"#173d33",fill:"#FFFFFF"})}),"38 (098) 12 34 567"]}),v.jsxs(rs,{href:"tel:+38(093)1234567",target:"blank",children:[v.jsx("svg",{width:24,height:24,stroke:"#173d33",fill:"transparent",children:v.jsx("use",{href:me+"#icon-call"})}),"38 (093) 12 34 567"]})]})]}),v.jsxs(ts,{children:[v.jsx(ns,{children:"E-mail:"}),v.jsxs(rs,{href:"mailto:office@ecosolution.com",target:"blank",children:[v.jsx("svg",{width:24,height:24,stroke:"#173d33",fill:"transparent",children:v.jsx("use",{href:me+"#icon-sms"})}),"office@ecosolution.com"]})]}),v.jsxs(ts,{children:[v.jsx(ns,{children:"Address:"}),v.jsxs(rs,{href:"https://www.google.com.ua/maps/search/79005,+Ukraine,+Lvivstreet.+Shota+Rustaveli,+7/@49.8313557,24.0323843,17z/data=!3m1!4b1?entry=ttu",target:"blank",children:[v.jsx("svg",{width:24,height:24,stroke:"#173d33",fill:"transparent",children:v.jsx("use",{href:me+"#icon-map"})}),"79005, Ukraine, Lvivstreet. Shota Rustaveli, 7"]})]}),v.jsxs(ts,{children:[v.jsx(ns,{children:"Social Networks:"}),v.jsx(Tu,{colorPlan:"primary",space:32})]})]}),v.jsx(zw,{})]})]}),Nw=O.footer`
   width: 100%;
   flex-shrink: 0;
   margin-top: 36px;
@@ -1509,7 +1497,7 @@ Error generating stack: `+s.message+`
   @media (min-width: 1280px) {
     gap: 487px;
   }
-`,Vw=()=>{const e=()=>{_i(Ue.MAIN)};return v.jsxs(Nw,{children:[v.jsxs(bw,{children:[v.jsx(fh,{}),v.jsx(Fw,{children:v.jsx(Tu,{colorplan:"primary",space:8})}),v.jsx(Dw,{onClick:e,children:v.jsx("svg",{width:16,height:16,children:v.jsx("use",{href:me+"#icon-arrow-right"})})})]}),v.jsxs(Rw,{children:[v.jsxs($w,{children:[v.jsx("p",{children:"79005, Ukraine, Lvivstreet. Shota Rustaveli, 7"}),v.jsx("p",{children:"office@ecosolution.com"})]}),v.jsx("p",{children:"ecosolution © 2023"})]})]})};const Bw="/vite-ecosolution/assets/fira-sans-v17-latin-300-f8fb86af.woff2",Ww="/vite-ecosolution/assets/fira-sans-v17-latin-regular-89ae1743.woff2",Uw="/vite-ecosolution/assets/fira-sans-v17-latin-500-c52b9a30.woff2",Hw="/vite-ecosolution/assets/oswald-v53-latin-regular-24df88e7.woff2",Gw="/vite-ecosolution/assets/oswald-v53-latin-700-6ecd2a10.woff2",Qw="/vite-ecosolution/assets/oswald-v53-latin-500-201dc695.woff2",Yw="/vite-ecosolution/assets/CASaygonText-Regular-b26b980e.woff2",Xw="/vite-ecosolution/assets/All-Round-Gothic-Medium-5c9e64b8.woff2",Kw="/vite-ecosolution/assets/inter-v13-latin-regular-2301bb03.woff2",bt={FiraSans_300:Bw,FiraSans_Regular:Ww,FiraSans_500:Uw,Oswald_Regular:Hw,Oswald_700:Gw,Oswald_500:Qw,CASaygonText_Regular:Yw,AllRoundGothic_Medium:Xw,Inter_Regular:Kw},qw=h0`
+`,Vw=()=>{const e=()=>{_i(Ue.MAIN)};return v.jsxs(Nw,{children:[v.jsxs(bw,{children:[v.jsx(fh,{}),v.jsx(Fw,{children:v.jsx(Tu,{colorPlan:"primary",space:8})}),v.jsx(Dw,{onClick:e,children:v.jsx("svg",{width:16,height:16,children:v.jsx("use",{href:me+"#icon-arrow-right"})})})]}),v.jsxs(Rw,{children:[v.jsxs($w,{children:[v.jsx("p",{children:"79005, Ukraine, Lvivstreet. Shota Rustaveli, 7"}),v.jsx("p",{children:"office@ecosolution.com"})]}),v.jsx("p",{children:"ecosolution © 2023"})]})]})};const Bw="/vite-ecosolution/assets/fira-sans-v17-latin-300-f8fb86af.woff2",Ww="/vite-ecosolution/assets/fira-sans-v17-latin-regular-89ae1743.woff2",Uw="/vite-ecosolution/assets/fira-sans-v17-latin-500-c52b9a30.woff2",Hw="/vite-ecosolution/assets/oswald-v53-latin-regular-24df88e7.woff2",Gw="/vite-ecosolution/assets/oswald-v53-latin-700-6ecd2a10.woff2",Qw="/vite-ecosolution/assets/oswald-v53-latin-500-201dc695.woff2",Yw="/vite-ecosolution/assets/CASaygonText-Regular-b26b980e.woff2",Xw="/vite-ecosolution/assets/All-Round-Gothic-Medium-5c9e64b8.woff2",Kw="/vite-ecosolution/assets/inter-v13-latin-regular-2301bb03.woff2",bt={FiraSans_300:Bw,FiraSans_Regular:Ww,FiraSans_500:Uw,Oswald_Regular:Hw,Oswald_700:Gw,Oswald_500:Qw,CASaygonText_Regular:Yw,AllRoundGothic_Medium:Xw,Inter_Regular:Kw},qw=h0`
 @font-face {
   font-family: 'Fira Sans';
   src: url(${bt.FiraSans_300}) format('woff2');
@@ -1557,7 +1545,6 @@ Error generating stack: `+s.message+`
 
   body {
         margin: 0;
-        /* font-family: 'Fira Sans', 'Oswald', 'CA Saygon Text', 'FONTSPRING DEMO - All Round Gothic Thick', 'Inter', sans-serif; */
         font-family: 'Fira Sans',  sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
