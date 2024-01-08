@@ -10,6 +10,7 @@
       "utils/*": ["utils/*"],
       "constants/*": ["constants/*"],
       "interfaces/*": ["interfaces/*"],
+      "theme/*": ["theme/*"],
     },
     "target": "ES2020",
     "useDefineForClassFields": true,

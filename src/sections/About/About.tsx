@@ -35,11 +35,7 @@ const About: FC = () => {
         <ValueItem>
           <ValueSubtitleSvgWrap>
             <svg width={16} height={16}>
-              <use
-                href={sprite + "#icon-maximize-circle"}
-                fill="transparent"
-                stroke="#173D33"
-              />
+              <use href={sprite + "#icon-maximize-circle"} />
             </svg>
             <ValueItemSubtitle>Openness</ValueItemSubtitle>
           </ValueSubtitleSvgWrap>
@@ -50,11 +46,7 @@ const About: FC = () => {
         <ValueItem>
           <ValueSubtitleSvgWrap>
             <svg width={16} height={16}>
-              <use
-                href={sprite + "#icon-global-edit"}
-                fill="transparent"
-                stroke="#173D33"
-              />
+              <use href={sprite + "#icon-global-edit"} />
             </svg>
             <ValueItemSubtitle>Responsibility</ValueItemSubtitle>
           </ValueSubtitleSvgWrap>
@@ -72,11 +64,7 @@ const About: FC = () => {
         <ValueItem>
           <ValueSubtitleSvgWrap>
             <svg width={16} height={16}>
-              <use
-                href={sprite + "#icon-cpu-charge"}
-                fill="transparent"
-                stroke="#173D33"
-              />
+              <use href={sprite + "#icon-cpu-charge"} />
             </svg>
             <ValueItemSubtitle>Innovation</ValueItemSubtitle>
           </ValueSubtitleSvgWrap>
@@ -87,11 +75,7 @@ const About: FC = () => {
         <ValueItem>
           <ValueSubtitleSvgWrap>
             <svg width={16} height={16}>
-              <use
-                href={sprite + "#icon-ranking"}
-                fill="transparent"
-                stroke="#173D33"
-              />
+              <use href={sprite + "#icon-ranking"} />
             </svg>
             <ValueItemSubtitle>Quality</ValueItemSubtitle>
           </ValueSubtitleSvgWrap>

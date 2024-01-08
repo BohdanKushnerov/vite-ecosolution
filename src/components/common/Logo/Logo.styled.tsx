@@ -12,12 +12,12 @@ export const LogoWrap: IStyledComponent<
   cursor: pointer;
 
   & > p {
-    color: ${({ $scrolled }) => $scrolled && "#97d28b"};
+    color: ${({ $scrolled, theme }) => $scrolled && theme.colors.accentColor};
   }
 
   &:hover {
     & > p {
-      color: #97d28b;
+      color: ${({ theme }) => theme.colors.accentColor};
     }
   }
 `;
@@ -35,7 +35,7 @@ export const LogoEcosolution = styled.p`
 export const LogoGreenergy = styled.p`
   width: 60px;
 
-  color: #97d28b;
+  color: ${({ theme }) => theme.colors.accentColor};
   font-family: "CA Saygon Text";
   font-size: 10px;
   font-style: normal;

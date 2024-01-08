@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { ThemeProvider } from "styled-components";
 
 import MainContainer from "common/MainContainer/MainContainer";
 import Header from "sections/Header/Header";
@@ -10,10 +11,11 @@ import Questions from "sections/Questions/Questions";
 import ContactUs from "sections/ContactUs/ContactUs";
 import Footer from "sections/Footer/Footer";
 import GlobalStyles from "assets/globalStyles";
+import theme from "theme/theme";
 
 const App: FC = () => {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
       <MainContainer>
         <Header />
@@ -27,7 +29,7 @@ const App: FC = () => {
         </main>
         <Footer />
       </MainContainer>
-    </>
+    </ThemeProvider>
   );
 };
 

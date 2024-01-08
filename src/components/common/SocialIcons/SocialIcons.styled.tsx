@@ -16,13 +16,17 @@ export const SocialIcon: IStyledComponent<
   ISocialIconProps
 > = styled.svg<ISocialIconProps>`
   cursor: pointer;
-  stroke: ${({ $colorPlan }) =>
-    $colorPlan === "primary" ? "#173d33" : "#ffffff"};
-  fill: ${({ $colorPlan }) =>
-    $colorPlan === "primary" ? "#173d33" : "#ffffff"};
+  stroke: ${({ theme, $colorPlan }) =>
+    $colorPlan === "primary"
+      ? theme.colors.mainTextColor
+      : theme.colors.whiteTextColor};
+  fill: ${({ theme, $colorPlan }) =>
+    $colorPlan === "primary"
+      ? theme.colors.mainTextColor
+      : theme.colors.whiteTextColor};
 
   &:hover {
-    fill: #97d28b;
-    stroke: #97d28b;
+    fill: ${({ theme }) => theme.colors.accentColor};
+    stroke: ${({ theme }) => theme.colors.accentColor};
   }
 `;

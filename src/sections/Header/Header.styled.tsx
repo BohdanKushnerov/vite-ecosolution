@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import {
+  selectBeforeTablet,
+  selectDesktop,
+  selectTablet,
+} from "utils/mediaQueries";
 
 export const AppHeader = styled.header`
   position: fixed;
@@ -10,28 +15,32 @@ export const AppHeader = styled.header`
   gap: 11px;
   width: 100%;
   margin: 0 auto;
-  padding: 36px 20px 0;
-  background: #f3f5fa;
+  background: ${({ theme }) => theme.colors.mainBackgroundColor};
 
-  @media (max-width: 767px) {
+  @media ${selectBeforeTablet} {
     min-width: 360px;
     max-width: 480px;
     justify-content: space-between;
+    padding: 36px 20px 0;
   }
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     width: 709px;
+    max-width: 709px;
+
     justify-content: center;
+    padding: 36px 0 0;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     width: 1240px;
+    max-width: 1240px;
     padding-top: 24px;
   }
 `;
 
 export const HeaderMenuAndButtonWrap = styled.div`
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     display: flex;
     gap: 12px;
     margin-left: auto;

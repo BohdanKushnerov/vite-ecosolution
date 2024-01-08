@@ -1,20 +1,22 @@
 import styled from "styled-components";
 
+import { selectDesktop, selectTablet } from "utils/mediaQueries";
+
 export const FooterSection = styled.footer`
   width: 100%;
   flex-shrink: 0;
   margin-top: 36px;
   padding: 24px 0;
 
-  border-top: 1px solid #97d28b;
+  border-top: 1px solid ${({ theme }) => theme.colors.accentColor};
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     width: 708px;
     margin-top: 100px;
     padding: 44px 0 40px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     width: 1240px;
     margin-top: 120px;
   }
@@ -25,7 +27,7 @@ export const LogoIconsButtonWrap = styled.div`
   flex-wrap: wrap;
   align-items: center;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     flex-wrap: nowrap;
   }
 `;
@@ -40,11 +42,11 @@ export const IconsWrap = styled.div`
     margin: auto;
   }
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     margin-left: 97px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     margin-left: 512px;
   }
 `;
@@ -61,7 +63,7 @@ export const ButtonUp = styled.button`
   height: 32px;
 
   border-radius: 100px;
-  background: #97d28b;
+  background: ${({ theme }) => theme.colors.accentColor};
   border: none;
   cursor: pointer;
 
@@ -73,11 +75,11 @@ export const ButtonUp = styled.button`
     background: #173d33;
 
     svg use {
-      stroke: #97d28b;
+      stroke: ${({ theme }) => theme.colors.accentColor};
     }
   }
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     margin-left: auto;
   }
 `;
@@ -89,14 +91,13 @@ export const AddressCopywrigthingWrap = styled.div`
   gap: 16px;
   margin-top: 24px;
 
-  color: #173d33;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.64px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     flex-direction: row;
 
     & > p {
@@ -111,19 +112,18 @@ export const Address = styled.address`
   align-items: center;
   gap: 16px;
 
-  color: #173d33;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.64px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     flex-direction: row;
     gap: 73px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     gap: 487px;
   }
 `;

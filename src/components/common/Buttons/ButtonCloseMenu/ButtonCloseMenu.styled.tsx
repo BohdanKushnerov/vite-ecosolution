@@ -22,11 +22,11 @@ export const ButtonClose = styled.button`
 
   &:hover {
     span {
-      color: #97d28b;
+      color: ${({ theme }) => theme.colors.accentColor};
     }
 
     svg use {
-      stroke: #97d28b;
+      stroke: ${({ theme }) => theme.colors.accentColor};
     }
   }
 

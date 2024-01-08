@@ -1,13 +1,19 @@
 import styled from "styled-components";
 
+import {
+  selectBeforeTablet,
+  selectDesktop,
+  selectTablet,
+} from "utils/mediaQueries";
+
 export const Section = styled.section`
   margin-top: 222px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     margin-top: 240px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     margin-top: 264px;
   }
 `;
@@ -17,22 +23,21 @@ export const MainContentWrap = styled.div`
   flex-direction: column;
   padding-bottom: 24px;
 
-  border-bottom: 1px solid #97d28b;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.accentColor};
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     flex-direction: row;
     gap: 65px;
     padding-bottom: 26px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     gap: 296px;
     padding-bottom: 28px;
   }
 `;
 
 export const MainTitle = styled.h1`
-  color: #173d33;
   font-family: "Oswald";
   font-size: 36px;
   font-style: normal;
@@ -40,22 +45,22 @@ export const MainTitle = styled.h1`
   line-height: 36px;
   text-transform: uppercase;
 
-  @media (max-width: 767px) {
+  @media ${selectBeforeTablet} {
     width: 100%;
-    min-width: 320px;
   }
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
+    width: 301px;
     margin-bottom: 0;
 
     font-size: 48px;
     line-height: 48px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     width: 485px;
 
-    font-size: 64px;
+    font-size: 62px;
     line-height: 64px;
   }
 `;
@@ -65,11 +70,11 @@ export const MainParagraphButtonWrap = styled.div`
   flex-direction: column;
   gap: 24px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     gap: 43px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     gap: 20px;
   }
 `;
@@ -77,7 +82,6 @@ export const MainParagraphButtonWrap = styled.div`
 export const MainParagraph = styled.p`
   margin-top: 24px;
 
-  color: #173d33;
   text-align: justify;
   font-size: 16px;
   font-style: normal;
@@ -85,14 +89,14 @@ export const MainParagraph = styled.p`
   line-height: normal;
   letter-spacing: -0.64px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     margin-top: 0;
     width: 342px;
 
     text-align: start;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     width: 363px;
   }
 `;
@@ -104,7 +108,7 @@ export const EcoInfo = styled.div`
   margin-top: 24px;
   margin-bottom: 36px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     gap: 0;
     margin-top: 16px;
     margin-bottom: 40px;
@@ -116,14 +120,13 @@ export const Address = styled.address`
   flex-direction: column;
   gap: 8px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     flex-direction: row;
     gap: 0;
   }
 `;
 
 export const Street = styled.p`
-  color: #173d33;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -131,13 +134,12 @@ export const Street = styled.p`
   letter-spacing: -0.64px;
   text-align: center;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     text-align: start;
   }
 `;
 
 export const Email = styled.p`
-  color: #173d33;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -145,13 +147,13 @@ export const Email = styled.p`
   letter-spacing: -0.64px;
   text-align: center;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     margin-left: 77px;
 
     text-align: start;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     margin-left: 492px;
   }
 `;
@@ -159,14 +161,13 @@ export const Email = styled.p`
 export const Ecosolution = styled.p`
   display: none;
 
-  color: #173d33;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.64px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     display: block;
     margin-left: auto;
   }

@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { Image } from "./SlidePicture.styled";
-import { Picture } from "common/PictureStyled/Picture.styled";
 import { ISlidePictureProps } from "interfaces/ISlidePictureProps";
 
 const SlidePicture: FC<ISlidePictureProps> = ({
@@ -9,10 +8,10 @@ const SlidePicture: FC<ISlidePictureProps> = ({
   alt,
 }) => {
   return (
-    <Picture>
+    <picture>
       <source srcSet={`${imageSrc} 1x, ${imageSrc2x} 2x`} />
       <Image src={imageSrc} alt={alt} />
-    </Picture>
+    </picture>
   );
 };
 

@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
+import { selectBeforeTablet } from "utils/mediaQueries";
+
 export const Picture = styled.picture`
-  @media (max-width: 767px) {
+  @media ${selectBeforeTablet} {
     img {
       width: 100%;
       height: auto;

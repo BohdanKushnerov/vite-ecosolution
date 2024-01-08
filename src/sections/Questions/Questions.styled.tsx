@@ -1,23 +1,29 @@
 import styled from "styled-components";
 
+import {
+  selectBeforeTablet,
+  selectDesktop,
+  selectTablet,
+} from "utils/mediaQueries";
+
 export const Section = styled.section`
   margin-top: 36px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     display: flex;
     flex-direction: row-reverse;
     gap: 24px;
     margin-top: 100px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     justify-content: start;
     gap: 185px;
     margin-top: 120px;
   }
 `;
 export const QuestionSectionTitleNotFoundWrap = styled.div`
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -27,7 +33,6 @@ export const QuestionSectionTitleNotFoundWrap = styled.div`
 export const QuestionSectionTitle = styled.h2`
   width: 100%;
 
-  color: #173d33;
   font-family: "Oswald";
   font-size: 28px;
   font-style: normal;
@@ -35,14 +40,14 @@ export const QuestionSectionTitle = styled.h2`
   line-height: 28px;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     width: 342px;
 
     font-size: 36px;
     line-height: 36px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     width: 398px;
 
     font-size: 48px;
@@ -53,7 +58,7 @@ export const QuestionSectionTitle = styled.h2`
 export const AllQuestionsWrap = styled.div`
   margin-top: 16px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     margin-top: 0;
   }
 
@@ -67,13 +72,13 @@ export const OneQuestionWrap = styled.div`
   gap: 8px;
   padding: 16px 0;
 
-  border-top: 1px solid #97d28b;
+  border-top: 1px solid ${({ theme }) => theme.colors.accentColor};
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     gap: 16px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     gap: 24px;
   }
 `;
@@ -86,10 +91,10 @@ export const IconButton = styled.div`
   }
 
   svg use {
-    stroke: #97d28b;
+    stroke: ${({ theme }) => theme.colors.accentColor};
   }
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     svg {
       width: 28px;
       height: 28px;
@@ -100,7 +105,6 @@ export const IconButton = styled.div`
 export const QuestionSubTitle = styled.h3`
   width: 100%;
 
-  color: #173d33;
   text-align: justify;
   font-size: 18px;
   font-style: normal;
@@ -108,11 +112,11 @@ export const QuestionSubTitle = styled.h3`
   line-height: normal;
   letter-spacing: -0.72px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     width: 298px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     width: 544px;
 
     font-size: 24px;
@@ -124,7 +128,6 @@ export const QuestionAnswer = styled.p`
   width: 100%;
   margin-top: 16px;
 
-  color: #173d33;
   text-align: justify;
   font-size: 14px;
   font-style: normal;
@@ -132,11 +135,11 @@ export const QuestionAnswer = styled.p`
   line-height: normal;
   letter-spacing: -0.56px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     width: 298px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     width: 544px;
 
     font-size: 16px;
@@ -151,18 +154,17 @@ export const NotFoundQuestionButtonWrap = styled.div`
   gap: 12px;
   margin-top: 36px;
 
-  @media (min-width: 768px) {
-    display: ${(props) => (props.id === "not-mobile" ? "flex" : "none")};
-    margin-top: 0px;
+  @media ${selectBeforeTablet} {
+    display: ${(props) => (props.id === "mobile" ? "flex" : "none")};
   }
 
-  @media (max-width: 767px) {
-    display: ${(props) => (props.id === "mobile" ? "flex" : "none")};
+  @media ${selectTablet} {
+    display: ${(props) => (props.id === "not-mobile" ? "flex" : "none")};
+    margin-top: 0px;
   }
 `;
 
 export const NotFoundQuestion = styled.p`
-  color: #173d33;
   text-align: justify;
   font-size: 18px;
   font-style: normal;
@@ -170,7 +172,7 @@ export const NotFoundQuestion = styled.p`
   line-height: normal;
   letter-spacing: -0.72px;
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     font-size: 24px;
     letter-spacing: -0.96px;
   }

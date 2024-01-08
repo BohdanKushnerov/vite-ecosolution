@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
+import { selectDesktop, selectTablet } from "utils/mediaQueries";
+
 export const Image = styled.img`
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     width: 342px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     width: 596px;
     height: 296px;
   }

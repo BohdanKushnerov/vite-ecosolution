@@ -14,6 +14,6 @@ export const HeaderMenuButton = styled.button`
   cursor: pointer;
 
   &:hover {
-    background: #97d28b;
+    background: ${({ theme }) => theme.colors.accentColor};
   }
 `;

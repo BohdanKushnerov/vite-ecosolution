@@ -1,19 +1,25 @@
 import styled from "styled-components";
 
+import {
+  selectBeforeTablet,
+  selectDesktop,
+  selectTablet,
+} from "utils/mediaQueries";
+
 export const Section = styled.section`
   margin-top: 36px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     margin-top: 100px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     margin-top: 120px;
   }
 `;
 
 export const TitleCounterAndButtonWrap = styled.div`
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -22,7 +28,6 @@ export const TitleCounterAndButtonWrap = styled.div`
 export const CasesTitle = styled.h2`
   width: 100%;
 
-  color: #173d33;
   font-family: "Oswald";
   font-size: 28px;
   font-style: normal;
@@ -30,14 +35,14 @@ export const CasesTitle = styled.h2`
   line-height: 28px;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     width: 276px;
 
     font-size: 36px;
     line-height: 36px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     width: 398px;
 
     font-size: 48px;
@@ -51,21 +56,19 @@ export const SliderCounterAndButtonWrap = styled.div`
   align-items: end;
   margin-top: 24px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     margin-top: 0;
     padding-left: 9px;
 
-    border-left: 1px solid #97d28b;
+    border-left: 1px solid ${({ theme }) => theme.colors.accentColor};
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     padding-left: 161px;
   }
 `;
 
 export const SliderCounter = styled.p`
-  color: #173d33;
-
   text-align: justify;
   font-size: 28px;
   font-style: normal;
@@ -99,10 +102,10 @@ export const SliderButtonLeft = styled.button`
   }
 
   &:hover {
-    border-color: #97d28b;
+    border-color: ${({ theme }) => theme.colors.accentColor};
 
     svg {
-      stroke: #97d28b;
+      stroke: ${({ theme }) => theme.colors.accentColor};
     }
   }
 `;
@@ -122,10 +125,10 @@ export const SliderButtonRigth = styled.button`
   }
 
   &:hover {
-    border-color: #97d28b;
+    border-color: ${({ theme }) => theme.colors.accentColor};
 
     svg {
-      stroke: #97d28b;
+      stroke: ${({ theme }) => theme.colors.accentColor};
     }
   }
 `;
@@ -135,11 +138,11 @@ export const SwiperWrap = styled.div`
   flex-shrink: 0;
   margin-top: 24px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     margin-top: 38px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     margin-top: 120px;
   }
 `;
@@ -147,9 +150,9 @@ export const SwiperWrap = styled.div`
 export const SlideTextContentWrap = styled.div`
   padding: 24px 12px 12px;
 
-  background: #eaedf1;
+  background: ${({ theme }) => theme.colors.secondBackgroundColor};
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     padding: 48px 36px;
   }
 `;
@@ -160,17 +163,16 @@ export const SlideTitleIconWrap = styled.div`
   align-items: center;
   padding-bottom: 21px;
 
-  @media (max-width: 767px) {
+  @media ${selectBeforeTablet} {
     gap: 61px;
   }
 
-  border-bottom: 1px solid #97d28b;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.accentColor};
 `;
 
 export const SlideTitle = styled.h4`
   width: 100%;
 
-  color: #173d33;
   text-align: justify;
   font-size: 18px;
   font-style: normal;
@@ -178,7 +180,7 @@ export const SlideTitle = styled.h4`
   line-height: normal;
   letter-spacing: -0.72px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     width: 194px;
     height: 72px;
 
@@ -186,7 +188,7 @@ export const SlideTitle = styled.h4`
     letter-spacing: -0.85px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     width: 357px;
 
     font-size: 24px;
@@ -201,7 +203,7 @@ export const IconSlideLink = styled.a`
   gap: 10px;
 
   border-radius: 100px;
-  background: #97d28b;
+  background: ${({ theme }) => theme.colors.accentColor};
   cursor: pointer;
 
   svg use {
@@ -212,7 +214,7 @@ export const IconSlideLink = styled.a`
     background: #173d33;
 
     svg use {
-      stroke: #97d28b;
+      stroke: ${({ theme }) => theme.colors.accentColor};
     }
   }
 `;
@@ -224,7 +226,6 @@ export const SlideDescDateWrap = styled.div`
 `;
 
 export const SlideDescription = styled.p`
-  color: #173d33;
   text-align: justify;
   font-size: 12px;
   font-style: normal;
@@ -232,19 +233,18 @@ export const SlideDescription = styled.p`
   line-height: normal;
   letter-spacing: -0.48px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     font-size: 14px;
     letter-spacing: -0.56px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     font-size: 16px;
     letter-spacing: -0.64px;
   }
 `;
 
 export const SlideDate = styled.p`
-  color: #173d33;
   text-align: right;
   font-size: 12px;
   font-style: normal;
@@ -252,12 +252,12 @@ export const SlideDate = styled.p`
   line-height: normal;
   letter-spacing: -0.48px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     font-size: 14px;
     letter-spacing: -0.56px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     font-size: 16px;
     letter-spacing: -0.64px;
   }

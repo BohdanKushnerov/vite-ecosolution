@@ -13,6 +13,7 @@ export default defineConfig({
       utils: "/src/utils",
       constants: "/src/constants",
       interfaces: "/src/interfaces",
+      theme: "/src/theme",
     },
   },
   plugins: [react()],

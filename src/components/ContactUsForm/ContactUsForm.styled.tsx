@@ -1,22 +1,24 @@
 import styled, { IStyledComponent } from "styled-components";
 
+import { selectDesktop, selectTablet } from "utils/mediaQueries";
 import { ILabelProps } from "interfaces/styled/ILabelProps";
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 28px;
+  width: 100%;
   margin-top: 36px;
   padding: 36px 12px;
 
-  background: #eaedf1;
+  background: ${({ theme }) => theme.colors.secondBackgroundColor};
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     margin-top: 0;
     padding: 36px 24px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     padding: 48px;
   }
 `;
@@ -32,16 +34,15 @@ export const Label: IStyledComponent<
   padding-bottom: 8px;
   width: 100%;
 
-  border-bottom: 1px solid #97d28b;
-  border-color: ${({ $isError }) => $isError && "#d28b8b"};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.accentColor};
+  border-color: ${({ $isError, theme }) => $isError && theme.colors.errorColor};
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     width: 500px;
   }
 `;
 
 export const InputName = styled.span`
-  color: #173d33;
   text-align: justify;
   font-size: 16px;
   font-style: normal;
@@ -51,7 +52,6 @@ export const InputName = styled.span`
 `;
 
 export const Input = styled.input`
-  color: #173d33;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -60,7 +60,7 @@ export const Input = styled.input`
   border: none;
   background: transparent;
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     font-size: 20px;
     letter-spacing: -0.8px;
   }
@@ -77,7 +77,7 @@ export const LabelTextArea = styled.label`
   padding-bottom: 8px;
   width: 100%;
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     width: 500px;
   }
 `;
@@ -86,7 +86,6 @@ export const Textarea = styled.textarea`
   height: 147px;
   padding: 0;
 
-  color: #173d33;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -97,7 +96,7 @@ export const Textarea = styled.textarea`
   border: none;
   resize: none;
   background: transparent;
-  border-bottom: 1px solid #97d28b;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.accentColor};
 
   &::placeholder {
     color: #bdbdbd;
@@ -115,7 +114,7 @@ export const ErrorText = styled.p`
   bottom: -16px;
   right: 0;
 
-  color: #d28b8b;
+  color: ${({ theme }) => theme.colors.errorColor};
   text-align: right;
   font-size: 12px;
   font-style: normal;

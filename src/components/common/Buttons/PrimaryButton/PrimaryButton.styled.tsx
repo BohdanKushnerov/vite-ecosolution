@@ -9,9 +9,8 @@ export const Button = styled.button`
   width: 140px;
 
   border-radius: 500px;
-  background: #97d28b;
+  background: ${({ theme }) => theme.colors.accentColor};
   border: none;
-  color: #173d33;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -25,10 +24,10 @@ export const Button = styled.button`
   }
 
   &:hover {
-    color: #97d28b;
+    color: ${({ theme }) => theme.colors.accentColor};
     background: #173d33;
     svg use {
-      fill: #97d28b;
+      fill: ${({ theme }) => theme.colors.accentColor};
     }
   }
 `;

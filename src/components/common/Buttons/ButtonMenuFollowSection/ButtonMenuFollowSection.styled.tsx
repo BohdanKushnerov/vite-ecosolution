@@ -7,7 +7,7 @@ export const ButtonFollowSection = styled.button`
 
   background: transparent;
   border: none;
-  color: #FFFFFF;
+  color: ${({ theme }) => theme.colors.whiteTextColor};
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -16,14 +16,14 @@ export const ButtonFollowSection = styled.button`
   cursor: pointer;
 
   svg use {
-    stroke: #FFFFFF;
+    stroke: ${({ theme }) => theme.colors.whiteTextColor};
   }
 
   &:hover {
-    color: #97d28b;
+    color: ${({ theme }) => theme.colors.accentColor};
 
     svg use {
-      stroke: #97D28B;
+      stroke: ${({ theme }) => theme.colors.accentColor};
     }
   }
 `;

@@ -25,17 +25,13 @@ const ContactUs: FC = () => {
             <ContactSubtitle>Phone:</ContactSubtitle>
             <PhonesWrap>
               <ConnectionLink href="tel:+38(093)1234567" target="blank">
-                <svg width={24} height={24} stroke="#173d33" fill="transparent">
-                  <use
-                    href={sprite + "#icon-call"}
-                    stroke="#173d33"
-                    fill="#FFFFFF"
-                  />
+                <svg width={24} height={24}>
+                  <use href={sprite + "#icon-call"} />
                 </svg>
                 38 (098) 12 34 567
               </ConnectionLink>
               <ConnectionLink href="tel:+38(093)1234567" target="blank">
-                <svg width={24} height={24} stroke="#173d33" fill="transparent">
+                <svg width={24} height={24}>
                   <use href={sprite + "#icon-call"} />
                 </svg>
                 38 (093) 12 34 567
@@ -46,7 +42,7 @@ const ContactUs: FC = () => {
           <ContactWrap>
             <ContactSubtitle>E-mail:</ContactSubtitle>
             <ConnectionLink href="mailto:office@ecosolution.com" target="blank">
-              <svg width={24} height={24} stroke="#173d33" fill="transparent">
+              <svg width={24} height={24}>
                 <use href={sprite + "#icon-sms"} />
               </svg>
               office@ecosolution.com
@@ -59,7 +55,7 @@ const ContactUs: FC = () => {
               href="https://www.google.com.ua/maps/search/79005,+Ukraine,+Lvivstreet.+Shota+Rustaveli,+7/@49.8313557,24.0323843,17z/data=!3m1!4b1?entry=ttu"
               target="blank"
             >
-              <svg width={24} height={24} stroke="#173d33" fill="transparent">
+              <svg width={24} height={24}>
                 <use href={sprite + "#icon-map"} />
               </svg>
               79005, Ukraine, Lvivstreet. Shota Rustaveli, 7

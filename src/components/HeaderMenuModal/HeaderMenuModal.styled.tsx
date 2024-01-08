@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { selectDesktop, selectTablet } from "utils/mediaQueries";
+
 export const HeaderMenuModalWrap = styled.div`
   position: absolute;
   top: 36px;
@@ -15,13 +17,13 @@ export const HeaderMenuModalWrap = styled.div`
   background: rgba(23, 61, 51, 0.75);
   backdrop-filter: blur(12.5px);
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     top: 42px;
     right: 30px;
     height: calc(100% - 84px);
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     top: 30px;
     right: 100px;
     height: calc(100% - 60px);

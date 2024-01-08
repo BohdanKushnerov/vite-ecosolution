@@ -1,19 +1,20 @@
 import styled from "styled-components";
 
+import { selectDesktop, selectTablet } from "utils/mediaQueries";
+
 export const Section = styled.section`
   margin-top: 36px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     margin-top: 100px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     margin-top: 120px;
   }
 `;
 
 export const ContactUsTitle = styled.h2`
-  color: #173d33;
   font-family: "Oswald";
   font-size: 28px;
   font-style: normal;
@@ -22,12 +23,12 @@ export const ContactUsTitle = styled.h2`
   text-transform: uppercase;
   text-align: center;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     font-size: 36px;
     line-height: 36px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     font-size: 48px;
     line-height: 48px;
   }
@@ -36,13 +37,13 @@ export const ContactUsTitle = styled.h2`
 export const AddressFormWrap = styled.div`
   margin-top: 24px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     display: flex;
     gap: 122px;
     margin-top: 40px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     gap: 178px;
     margin-top: 120px;
   }
@@ -60,7 +61,7 @@ export const ContactWrap = styled.div`
   gap: 8px;
   width: 244px;
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     width: 469px;
   }
 `;
@@ -72,7 +73,6 @@ export const PhonesWrap = styled.div`
 `;
 
 export const ContactSubtitle = styled.p`
-  color: #173d33;
   text-align: justify;
   font-size: 16px;
   font-style: normal;
@@ -87,7 +87,6 @@ export const ConnectionLink = styled.a`
   gap: 8px;
   margin-top: 8px;
 
-  color: #173d33;
   text-align: justify;
   font-size: 20px;
   font-style: normal;
@@ -96,27 +95,28 @@ export const ConnectionLink = styled.a`
   letter-spacing: -0.9px;
   cursor: pointer;
 
-  svg {
-    flex-shrink: 0;
+  svg use {
+    stroke: ${({ theme }) => theme.colors.mainTextColor};
+    fill: transparent;
   }
 
   p {
     width: 212px;
 
-    @media (min-width: 1280px) {
+    @media ${selectDesktop} {
       width: 434px;
     }
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     font-size: 24px;
     letter-spacing: -0.96px;
   }
 
   &:hover {
     svg use {
-      stroke: #97d28b;
+      stroke: ${({ theme }) => theme.colors.accentColor};
     }
-    color: #97d28b;
+    color: ${({ theme }) => theme.colors.accentColor};
   }
 `;

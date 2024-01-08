@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
+import { selectDesktop, selectTablet } from "utils/mediaQueries";
+
 export const Section = styled.section`
   margin-top: 36px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     margin-top: 100px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     margin-top: 120px;
   }
 `;
@@ -16,7 +18,6 @@ export const ElectricityTitle = styled.h2`
   width: 286px;
   margin: 0 auto;
 
-  color: #173d33;
   text-align: center;
   font-family: "Oswald";
   font-size: 28px;
@@ -25,14 +26,14 @@ export const ElectricityTitle = styled.h2`
   line-height: 28px;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     width: 368px;
 
     font-size: 36px;
     line-height: 36px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     width: 491px;
 
     font-size: 48px;
@@ -48,9 +49,9 @@ export const ElectricityTitle = styled.h2`
     height: 87px;
     flex-shrink: 0;
 
-    background: #97d28b;
+    background: ${({ theme }) => theme.colors.accentColor};
 
-    @media (min-width: 1280px) {
+    @media ${selectDesktop} {
       margin: 16px auto 17px;
     }
   }
@@ -63,17 +64,17 @@ export const ElectricityCounterWrap = styled.div`
   gap: 8px;
   margin-top: 24px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     gap: 24px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     margin-top: 17px;
   }
 `;
 
 export const ElectricityCounter = styled.p`
-  color: #97d28b;
+  color: ${({ theme }) => theme.colors.accentColor};
   text-align: center;
   font-family: "Oswald";
   font-size: 48px;
@@ -82,19 +83,18 @@ export const ElectricityCounter = styled.p`
   line-height: 48px;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     font-size: 100px;
     line-height: 100px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     font-size: 164px;
     line-height: 164px;
   }
 `;
 
 export const KWHSpan = styled.span`
-  color: #173d33;
   text-align: center;
   font-family: "Oswald";
   font-size: 24px;
@@ -102,12 +102,12 @@ export const KWHSpan = styled.span`
   font-weight: 400;
   line-height: 24px;
 
-  @media (min-width: 768px) {
+  @media ${selectTablet} {
     font-size: 28px;
     line-height: 48px;
   }
 
-  @media (min-width: 1280px) {
+  @media ${selectDesktop} {
     font-size: 48px;
   }
 `;

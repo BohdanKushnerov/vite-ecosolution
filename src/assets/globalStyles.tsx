@@ -1,5 +1,4 @@
 import "modern-normalize";
-
 import { createGlobalStyle } from "styled-components";
 import Fonts from "./fontPaths";
 
@@ -54,7 +53,8 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Fira Sans',  sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        background: #F3F5FA;
+        color: ${({ theme }) => theme.colors.mainTextColor};
+        background: ${({ theme }) => theme.colors.mainBackgroundColor};
       }
 
       code {
@@ -89,6 +89,7 @@ const GlobalStyles = createGlobalStyle`
       }
 
       a {
+        color: ${({ theme }) => theme.colors.mainTextColor};
         text-decoration: none;
       }
 `;
