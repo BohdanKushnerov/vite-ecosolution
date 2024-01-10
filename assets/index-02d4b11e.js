@@ -220,7 +220,7 @@ Error generating stack: `+s.message+`
   cursor: pointer;
 
   & > p {
-    color: ${({$scrolled:e})=>e&&"${({theme}) => theme.colors.accentColor}"};
+    color: ${({$scrolled:e,theme:t})=>e&&t.colors.accentColor};
   }
 
   &:hover {
@@ -1193,7 +1193,7 @@ Error generating stack: `+s.message+`
   width: 100%;
 
   border-bottom: 1px solid ${({theme:e})=>e.colors.accentColor};
-  border-color: ${({$isError:e})=>e&&"${({ theme }) => theme.colors.errorColor}"};
+  border-color: ${({$isError:e,theme:t})=>e&&t.colors.errorColor};
 
   @media ${G} {
     width: 500px;
